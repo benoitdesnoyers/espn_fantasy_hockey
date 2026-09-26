@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ESPN Fantasy Hockey league",
+        "description": "Find the league ID in your league URL (leagueId=...). The season is the year the NHL season ends (2026-27 = 2027). Private leagues also need the espn_s2 and SWID cookies from a logged-in browser session.",
+        "data": {
+          "league_id": "League ID",
+          "season": "Season",
+          "espn_s2": "espn_s2 cookie",
+          "swid": "SWID cookie"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Update ESPN cookies",
+        "description": "ESPN rejected the stored cookies. Paste fresh espn_s2 and SWID values from your browser.",
+        "data": {
+          "espn_s2": "espn_s2 cookie",
+          "swid": "SWID cookie"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to ESPN.",
+      "invalid_auth": "This league is private. Provide valid espn_s2 and SWID cookies.",
+      "league_not_found": "No league found with that ID for that season.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This league and season is already configured.",
+      "reauth_successful": "Cookies updated successfully."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "matchup_period": {
+        "name": "Matchup period"
+      }
+    }
+  }
+}
