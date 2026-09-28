@@ -7,7 +7,18 @@ from typing import Any
 
 import aiohttp
 
-from .const import API_BASE_URL, API_VIEWS
+from .const import (
+    API_BASE_URL,
+    API_VIEWS,
+    HEADSHOT_URL,
+    LINEUP_SLOTS,
+    POSITIONS,
+    PRO_TEAMS,
+    STAT_NAMES,
+    STAT_SOURCE_ACTUAL,
+    STAT_SOURCE_PROJECTED,
+    STAT_SPLITS,
+)
 
 
 class EspnApiError(Exception):
@@ -20,6 +31,24 @@ class EspnAuthError(EspnApiError):
 
 class EspnLeagueNotFound(EspnApiError):
     """The league/season combination does not exist."""
+
+
+@dataclass
+class Player:
+    """A rostered player and their performance."""
+
+    id: int
+    name: str
+    position: str
+    lineup_slot: str
+    lineup_slot_id: int
+    pro_team: str
+    headshot: str
+    injury_status: str | None
+    # Fantasy points keyed by split: season, last_7, last_15, last_30, projected.
+    points: dict[str, float]
+    # Current-season raw stats keyed by STAT_NAMES value.
+    stats: dict[str, float | str]
 
 
 @dataclass
@@ -40,6 +69,7 @@ class Team:
     points_against: float
     games_back: float
     streak: str | None
+    roster: list[Player] = field(default_factory=list)
 
 
 @dataclass
@@ -70,6 +100,7 @@ class League:
     scoring_type: str | None
     current_matchup_period: int | None
     scoring_period: int | None
+    my_team_id: int | None = None
     teams: dict[int, Team] = field(default_factory=dict)
     current_matchups: list[Matchup] = field(default_factory=list)
     raw: dict[str, Any] = field(default_factory=dict, repr=False)
@@ -102,14 +133,40 @@ class EspnFantasyHockeyApi:
 
     async def async_get_league(self) -> League:
         """Fetch and parse the league."""
-        return _parse_league(await self._async_get_raw())
+        return _parse_league(await self._async_get_raw(), self._cookies.get("SWID"))
+
+    @property
+    def has_cookies(self) -> bool:
+        """Whether this client is logged in to ESPN."""
+        return bool(self._cookies)
+
+    async def async_get_image(self, url: str) -> tuple[bytes, str]:
+        """Download an image that ESPN only serves to logged-in users."""
+        try:
+            async with self._session.get(
+                url,
+                # ESPN answers 406 to "Accept: image/*"; the content type is checked below.
+                headers=self._headers("*/*"),
+                timeout=aiohttp.ClientTimeout(total=30),
+            ) as resp:
+                resp.raise_for_status()
+                content_type = resp.content_type
+                if not content_type.startswith("image/"):
+                    raise EspnApiError(f"Not an image: {content_type}")
+                return await resp.read(), content_type
+        except aiohttp.ClientError as err:
+            raise EspnApiError(f"Error downloading {url}: {err}") from err
+
+    def _headers(self, accept: str) -> dict[str, str]:
+        headers = {"Accept": accept}
+        if self._cookies:
+            headers["Cookie"] = "; ".join(f"{k}={v}" for k, v in self._cookies.items())
+        return headers
 
     async def _async_get_raw(self) -> dict[str, Any]:
         url = API_BASE_URL.format(season=self._season, league_id=self._league_id)
         params = [("view", view) for view in API_VIEWS]
-        headers = {"Accept": "application/json"}
-        if self._cookies:
-            headers["Cookie"] = "; ".join(f"{k}={v}" for k, v in self._cookies.items())
+        headers = self._headers("application/json")
 
         try:
             async with self._session.get(
@@ -140,14 +197,15 @@ class EspnFantasyHockeyApi:
         return data
 
 
-def _parse_league(data: dict[str, Any]) -> League:
+def _parse_league(data: dict[str, Any], swid: str | None = None) -> League:
     settings = data.get("settings", {})
     status = data.get("status", {})
 
+    # displayName is often an auto-generated handle like "ESPNfan9422471749".
     members = {
         m["id"]: (
-            m.get("displayName")
-            or f"{m.get('firstName', '')} {m.get('lastName', '')}".strip()
+            f"{m.get('firstName', '')} {m.get('lastName', '')}".strip()
+            or m.get("displayName")
         )
         for m in data.get("members", [])
     }
@@ -178,6 +236,7 @@ def _parse_league(data: dict[str, Any]) -> League:
             points_against=overall.get("pointsAgainst", 0.0),
             games_back=overall.get("gamesBack", 0.0),
             streak=f"{streak_type[0]}{streak_len}" if streak_type and streak_len else None,
+            roster=_parse_roster(t.get("roster", {}), data.get("seasonId")),
         )
 
     current_period = status.get("currentMatchupPeriod")
@@ -196,8 +255,20 @@ def _parse_league(data: dict[str, Any]) -> League:
         scoring_period=data.get("scoringPeriodId"),
         teams=teams,
         current_matchups=matchups,
+        my_team_id=_find_my_team(data.get("teams", []), swid),
         raw=data,
     )
+
+
+def _find_my_team(teams: list[dict[str, Any]], swid: str | None) -> int | None:
+    """The SWID cookie is the ESPN user ID that appears in a team's owners list."""
+    if not swid:
+        return None
+    swid = swid.strip().upper()
+    for t in teams:
+        if swid in (o.upper() for o in t.get("owners", [])):
+            return t["id"]
+    return None
 
 
 def _parse_matchup(m: dict[str, Any]) -> Matchup:
@@ -222,3 +293,61 @@ def _side_score(side: dict[str, Any]) -> float | str | None:
         return f"{cumulative.get('wins', 0)}-{cumulative.get('losses', 0)}-{cumulative.get('ties', 0)}"
     live = side.get("totalPointsLive")
     return live if live is not None else side.get("totalPoints")
+
+
+def _parse_roster(roster: dict[str, Any], season: int | None) -> list[Player]:
+    players = [_parse_player(e, season) for e in roster.get("entries", [])]
+    slot_order = list(LINEUP_SLOTS)
+    players.sort(
+        key=lambda p: (
+            slot_order.index(p.lineup_slot_id) if p.lineup_slot_id in slot_order else len(slot_order),
+            p.name,
+        )
+    )
+    return players
+
+
+def _parse_player(entry: dict[str, Any], season: int | None) -> Player:
+    player = entry.get("playerPoolEntry", {}).get("player", {})
+    slot_id = entry.get("lineupSlotId", -1)
+
+    points: dict[str, float] = {}
+    stats: dict[str, float | str] = {}
+    for s in player.get("stats", []):
+        if s.get("seasonId") != season or s.get("scoringPeriodId", 0) != 0:
+            continue
+        source, split = s.get("statSourceId"), s.get("statSplitTypeId")
+        if source == STAT_SOURCE_ACTUAL and split in STAT_SPLITS:
+            points[STAT_SPLITS[split]] = round(s.get("appliedTotal", 0.0), 1)
+            if split == 0:
+                stats = _named_stats(s.get("stats", {}))
+        elif source == STAT_SOURCE_PROJECTED and split == 0:
+            points["projected"] = round(s.get("appliedTotal", 0.0), 1)
+
+    return Player(
+        id=player.get("id", entry.get("playerId")),
+        name=player.get("fullName", "Unknown"),
+        position=POSITIONS.get(player.get("defaultPositionId"), "?"),
+        lineup_slot=LINEUP_SLOTS.get(slot_id, str(slot_id)),
+        lineup_slot_id=slot_id,
+        pro_team=PRO_TEAMS.get(player.get("proTeamId"), str(player.get("proTeamId"))),
+        headshot=HEADSHOT_URL.format(player_id=player.get("id", entry.get("playerId"))),
+        injury_status=player.get("injuryStatus") or entry.get("injuryStatus"),
+        points=points,
+        stats=stats,
+    )
+
+
+def _named_stats(raw: dict[str, float]) -> dict[str, float | str]:
+    stats: dict[str, float | str] = {}
+    for stat_id, name in STAT_NAMES.items():
+        if (value := raw.get(stat_id)) is None:
+            continue
+        if name == "toi_per_game":  # seconds -> "m:ss"
+            minutes, seconds = divmod(round(value), 60)
+            stats[name] = f"{minutes}:{seconds:02d}"
+        elif name in ("gaa", "save_pct"):
+            stats[name] = round(value, 3)
+        else:
+            stats[name] = int(value) if float(value).is_integer() else value
+    return stats

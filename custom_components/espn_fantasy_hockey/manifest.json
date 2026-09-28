@@ -3,10 +3,14 @@
   "name": "ESPN Fantasy Hockey",
   "codeowners": [],
   "config_flow": true,
-  "documentation": "https://github.com/OWNER/espn_fantasy_hockey",
+  "documentation": "https://github.com/benoitdesnoyers/espn_fantasy_hockey",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/OWNER/espn_fantasy_hockey/issues",
+  "issue_tracker": "https://github.com/benoitdesnoyers/espn_fantasy_hockey/issues",
   "requirements": [],
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "dependencies": [
+    "frontend",
+    "http"
+  ]
 }

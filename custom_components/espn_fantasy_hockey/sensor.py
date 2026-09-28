@@ -20,12 +20,13 @@ async def async_setup_entry(
     entry: EspnFantasyHockeyConfigEntry,
     async_add_entities: AddConfigEntryEntitiesCallback,
 ) -> None:
-    """Create one standing + one matchup sensor per team, plus a league sensor."""
+    """Create standing, matchup and roster sensors per team, plus a league sensor."""
     coordinator = entry.runtime_data
     entities: list[SensorEntity] = [LeagueMatchupPeriodSensor(coordinator)]
     for team_id in coordinator.data.teams:
         entities.append(TeamStandingSensor(coordinator, team_id))
         entities.append(TeamMatchupSensor(coordinator, team_id))
+        entities.append(TeamRosterSensor(coordinator, team_id))
     async_add_entities(entities)
 
 
@@ -65,9 +66,12 @@ class LeagueMatchupPeriodSensor(EspnFantasyHockeyEntity, SensorEntity):
         league = self.coordinator.data
         return {
             "league_id": league.id,
+            "league_name": league.name,
             "season": league.season,
             "scoring_type": league.scoring_type,
             "scoring_period": league.scoring_period,
+            # The team owned by the account whose cookies were entered; cards default to it.
+            "my_team_id": league.my_team_id,
         }
 
 
@@ -86,13 +90,15 @@ class _TeamEntity(EspnFantasyHockeyEntity):
 
     @property
     def entity_picture(self) -> str | None:
-        return self.team.logo if self.team else None
+        return self.coordinator.logo_url(self.team) if self.team else None
 
 
 class TeamStandingSensor(_TeamEntity, SensorEntity):
     """A team's position in the standings; record details as attributes."""
 
     _attr_icon = "mdi:podium"
+    # Names stay dynamic (see `name`); the key only tags the entity's role for the cards.
+    _attr_translation_key = "team_standing"
 
     def __init__(self, coordinator: EspnFantasyHockeyCoordinator, team_id: int) -> None:
         super().__init__(coordinator, team_id, "standing")
@@ -115,6 +121,7 @@ class TeamStandingSensor(_TeamEntity, SensorEntity):
             return {}
         return {
             "team_id": team.id,
+            "team_name": team.name,
             "abbrev": team.abbrev,
             "owners": team.owners,
             "record": f"{team.wins}-{team.losses}-{team.ties}",
@@ -132,6 +139,7 @@ class TeamMatchupSensor(_TeamEntity, SensorEntity):
     """A team's score in the current matchup (points, or W-L-T for categories)."""
 
     _attr_icon = "mdi:hockey-sticks"
+    _attr_translation_key = "team_matchup"
 
     def __init__(self, coordinator: EspnFantasyHockeyCoordinator, team_id: int) -> None:
         super().__init__(coordinator, team_id, "matchup")
@@ -153,15 +161,74 @@ class TeamMatchupSensor(_TeamEntity, SensorEntity):
         league = self.coordinator.data
         matchup = league.matchup_for(self._team_id)
         if matchup is None:
-            return {"matchup_period": league.current_matchup_period, "opponent": None}
+            return {
+                "team_id": self._team_id,
+                "team_name": self.team.name if self.team else None,
+                "matchup_period": league.current_matchup_period,
+                "opponent": None,
+            }
         opponent_id, own_score, opponent_score = matchup.opponent_of(self._team_id)
         opponent = league.teams.get(opponent_id) if opponent_id is not None else None
         return {
+            "team_id": self._team_id,
+            "team_name": self.team.name if self.team else None,
             "matchup_period": matchup.matchup_period,
             "opponent": opponent.name if opponent else None,  # None means a bye
             "opponent_id": opponent_id,
-            "opponent_logo": opponent.logo if opponent else None,
+            "opponent_logo": self.coordinator.logo_url(opponent) if opponent else None,
             "score": own_score,
             "opponent_score": opponent_score,
             "winner": matchup.winner,
+        }
+
+
+class TeamRosterSensor(_TeamEntity, SensorEntity):
+    """A team's roster; state is the season fantasy points of its current players."""
+
+    _attr_icon = "mdi:account-group"
+    _attr_translation_key = "team_roster"
+    # The player list is large and changes every refresh; keep it out of history.
+    _unrecorded_attributes = frozenset({"players"})
+
+    def __init__(self, coordinator: EspnFantasyHockeyCoordinator, team_id: int) -> None:
+        super().__init__(coordinator, team_id, "roster")
+
+    @property
+    def name(self) -> str | None:
+        return f"{self.team.name} roster" if self.team else None
+
+    @property
+    def native_value(self) -> float | None:
+        team = self.team
+        if team is None:
+            return None
+        return round(sum(p.points.get("season", 0.0) for p in team.roster), 1)
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        team = self.team
+        if team is None:
+            return {}
+        return {
+            "team_id": team.id,
+            "team_name": team.name,
+            "player_count": len(team.roster),
+            "injured": [p.name for p in team.roster if p.injury_status not in (None, "ACTIVE", "NORMAL")],
+            "players": [
+                {
+                    "name": p.name,
+                    "position": p.position,
+                    "slot": p.lineup_slot,
+                    "nhl_team": p.pro_team,
+                    "headshot": p.headshot,
+                    "injury": p.injury_status,
+                    "points_season": p.points.get("season"),
+                    "points_last_7": p.points.get("last_7"),
+                    "points_last_15": p.points.get("last_15"),
+                    "points_last_30": p.points.get("last_30"),
+                    "points_projected": p.points.get("projected"),
+                    "stats": p.stats,
+                }
+                for p in team.roster
+            ],
         }
