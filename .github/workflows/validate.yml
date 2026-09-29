@@ -22,5 +22,3 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
-          # Remove once the icon is merged into home-assistant/brands.
-          ignore: brands
