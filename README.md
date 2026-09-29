@@ -1,5 +1,7 @@
 # ESPN Fantasy Hockey for Home Assistant
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=benoitdesnoyers&repository=espn_fantasy_hockey&category=integration)
+
 A custom integration for your [ESPN Fantasy Hockey](https://fantasy.espn.com/hockey/) league, with dashboard cards included. Available in English and French.
 
 - **Standings, matchups and rosters** as sensors, with player stats, fantasy points and headshots.
@@ -19,6 +21,8 @@ A custom integration for your [ESPN Fantasy Hockey](https://fantasy.espn.com/hoc
 ## Installation
 
 ### HACS
+
+The quickest way is the **Open in HACS** button at the top of this page, which opens the integration in your own Home Assistant. Or, manually:
 
 1. In HACS, open ⋮ → **Custom repositories**, add `https://github.com/benoitdesnoyers/espn_fantasy_hockey` with the category **Integration**. (Inclusion in the HACS default list is pending; once it's in, you can skip this step.)
 2. Search for **ESPN Fantasy Hockey**, download it, and restart Home Assistant.
