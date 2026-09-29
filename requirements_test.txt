@@ -1,0 +1,6 @@
+# Test dependencies. The plugin pins the Home Assistant version it tests against;
+# home-assistant-frontend must be the version that Home Assistant release expects
+# (see homeassistant/components/frontend/manifest.json). Bump both together.
+pytest-homeassistant-custom-component==0.13.367
+home-assistant-frontend==20260826.7
+ruff==0.16.9

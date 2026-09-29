@@ -1,0 +1,34 @@
+{
+ "transactions": [
+  {
+   "id": "tx-1",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "proposedDate": 1790466907702,
+   "teamId": 1,
+   "items": [
+    {
+     "type": "ADD",
+     "playerId": 5149204,
+     "fromTeamId": 0,
+     "toTeamId": 1
+    }
+   ]
+  },
+  {
+   "id": "tx-2",
+   "type": "FREEAGENT",
+   "status": "EXECUTED",
+   "proposedDate": 1790002975709,
+   "teamId": 4,
+   "items": [
+    {
+     "type": "ADD",
+     "playerId": 5452,
+     "fromTeamId": 0,
+     "toTeamId": 4
+    }
+   ]
+  }
+ ]
+}

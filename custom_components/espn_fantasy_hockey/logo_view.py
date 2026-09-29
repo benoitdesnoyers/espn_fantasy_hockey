@@ -5,7 +5,6 @@ from __future__ import annotations
 import logging
 
 from aiohttp import web
-
 from homeassistant.components.http import KEY_HASS, HomeAssistantView
 from homeassistant.config_entries import ConfigEntryState
 
@@ -27,15 +26,21 @@ class EspnLogoView(HomeAssistantView):
     name = f"api:{DOMAIN}:logo"
     requires_auth = False
 
-    async def get(self, request: web.Request, entry_id: str, team_id: str) -> web.Response:
+    async def get(
+        self, request: web.Request, entry_id: str, team_id: str
+    ) -> web.Response:
         hass = request.app[KEY_HASS]
         entry = hass.config_entries.async_get_entry(entry_id)
-        if entry is None or entry.domain != DOMAIN or entry.state is not ConfigEntryState.LOADED:
+        if (
+            entry is None
+            or entry.domain != DOMAIN
+            or entry.state is not ConfigEntryState.LOADED
+        ):
             raise web.HTTPNotFound
 
         coordinator = entry.runtime_data
         try:
-            team = coordinator.data.teams.get(int(team_id))
+            team = coordinator.data.league.teams.get(int(team_id))
         except ValueError:
             raise web.HTTPNotFound from None
         if team is None or not team.logo:

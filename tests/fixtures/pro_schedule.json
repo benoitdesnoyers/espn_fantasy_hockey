@@ -1,0 +1,1627 @@
+{
+ "settings": {
+  "proTeams": [
+   {
+    "id": 11,
+    "abbrev": "NJ",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891817,
+       "date": 1790895600000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 15
+      }
+     ],
+     "5": [
+      {
+       "id": 401891818,
+       "date": 1791070200000,
+       "homeProTeamId": 12,
+       "awayProTeamId": 11
+      }
+     ],
+     "8": [
+      {
+       "id": 401892451,
+       "date": 1791327600000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 129764
+      }
+     ],
+     "12": [
+      {
+       "id": 401892470,
+       "date": 1791660600000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 22
+      }
+     ],
+     "14": [
+      {
+       "id": 401892486,
+       "date": 1791846000000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 14
+      }
+     ]
+    }
+   },
+   {
+    "id": 12,
+    "abbrev": "NYI",
+    "proGamesByScoringPeriod": {
+     "2": [
+      {
+       "id": 401892431,
+       "date": 1790811000000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 12
+      }
+     ],
+     "5": [
+      {
+       "id": 401891818,
+       "date": 1791070200000,
+       "homeProTeamId": 12,
+       "awayProTeamId": 11
+      }
+     ],
+     "8": [
+      {
+       "id": 401892452,
+       "date": 1791329400000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 12
+      }
+     ],
+     "10": [
+      {
+       "id": 401892462,
+       "date": 1791502200000,
+       "homeProTeamId": 12,
+       "awayProTeamId": 4
+      }
+     ],
+     "12": [
+      {
+       "id": 401892479,
+       "date": 1791675000000,
+       "homeProTeamId": 12,
+       "awayProTeamId": 20
+      }
+     ]
+    }
+   },
+   {
+    "id": 13,
+    "abbrev": "NYR",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891774,
+       "date": 1790726400000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 13
+      }
+     ],
+     "3": [
+      {
+       "id": 401891819,
+       "date": 1790895600000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 20
+      }
+     ],
+     "4": [
+      {
+       "id": 401891803,
+       "date": 1790980200000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 13
+      }
+     ],
+     "6": [
+      {
+       "id": 401892443,
+       "date": 1791151200000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 129764
+      }
+     ],
+     "8": [
+      {
+       "id": 401892452,
+       "date": 1791329400000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 12
+      }
+     ],
+     "11": [
+      {
+       "id": 401892466,
+       "date": 1791586800000,
+       "homeProTeamId": 23,
+       "awayProTeamId": 13
+      }
+     ],
+     "13": [
+      {
+       "id": 401892483,
+       "date": 1791756000000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 22
+      }
+     ]
+    }
+   },
+   {
+    "id": 14,
+    "abbrev": "OTT",
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401892434,
+       "date": 1791068400000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 14
+      }
+     ],
+     "7": [
+      {
+       "id": 401892446,
+       "date": 1791243000000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 14
+      }
+     ],
+     "8": [
+      {
+       "id": 401892450,
+       "date": 1791327600000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 14
+      }
+     ],
+     "10": [
+      {
+       "id": 401891820,
+       "date": 1791500400000,
+       "homeProTeamId": 14,
+       "awayProTeamId": 15
+      }
+     ],
+     "12": [
+      {
+       "id": 401892474,
+       "date": 1791673200000,
+       "homeProTeamId": 14,
+       "awayProTeamId": 27
+      }
+     ],
+     "14": [
+      {
+       "id": 401892486,
+       "date": 1791846000000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 14
+      }
+     ]
+    }
+   },
+   {
+    "id": 15,
+    "abbrev": "PHI",
+    "proGamesByScoringPeriod": {
+     "2": [
+      {
+       "id": 401891821,
+       "date": 1790811000000,
+       "homeProTeamId": 15,
+       "awayProTeamId": 16
+      }
+     ],
+     "3": [
+      {
+       "id": 401891817,
+       "date": 1790895600000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 15
+      }
+     ],
+     "5": [
+      {
+       "id": 401892435,
+       "date": 1791068400000,
+       "homeProTeamId": 15,
+       "awayProTeamId": 7
+      }
+     ],
+     "7": [
+      {
+       "id": 401892445,
+       "date": 1791241200000,
+       "homeProTeamId": 20,
+       "awayProTeamId": 15
+      }
+     ],
+     "10": [
+      {
+       "id": 401891820,
+       "date": 1791500400000,
+       "homeProTeamId": 14,
+       "awayProTeamId": 15
+      }
+     ],
+     "12": [
+      {
+       "id": 401892469,
+       "date": 1791651600000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 15
+      }
+     ],
+     "13": [
+      {
+       "id": 401892484,
+       "date": 1791759600000,
+       "homeProTeamId": 15,
+       "awayProTeamId": 7
+      }
+     ]
+    }
+   },
+   {
+    "id": 16,
+    "abbrev": "PIT",
+    "proGamesByScoringPeriod": {
+     "2": [
+      {
+       "id": 401891821,
+       "date": 1790811000000,
+       "homeProTeamId": 15,
+       "awayProTeamId": 16
+      }
+     ],
+     "5": [
+      {
+       "id": 401891822,
+       "date": 1791068400000,
+       "homeProTeamId": 16,
+       "awayProTeamId": 10
+      }
+     ],
+     "7": [
+      {
+       "id": 401892447,
+       "date": 1791243000000,
+       "homeProTeamId": 16,
+       "awayProTeamId": 28
+      }
+     ],
+     "9": [
+      {
+       "id": 401891830,
+       "date": 1791415800000,
+       "homeProTeamId": 23,
+       "awayProTeamId": 16
+      }
+     ],
+     "11": [
+      {
+       "id": 401892467,
+       "date": 1791586800000,
+       "homeProTeamId": 29,
+       "awayProTeamId": 16
+      }
+     ],
+     "12": [
+      {
+       "id": 401892475,
+       "date": 1791673200000,
+       "homeProTeamId": 16,
+       "awayProTeamId": 9
+      }
+     ]
+    }
+   },
+   {
+    "id": 17,
+    "abbrev": "COL",
+    "proGamesByScoringPeriod": {
+     "2": [
+      {
+       "id": 401891780,
+       "date": 1790820000000,
+       "homeProTeamId": 17,
+       "awayProTeamId": 8
+      }
+     ],
+     "5": [
+      {
+       "id": 401892439,
+       "date": 1791075600000,
+       "homeProTeamId": 17,
+       "awayProTeamId": 19
+      }
+     ],
+     "9": [
+      {
+       "id": 401892455,
+       "date": 1791415800000,
+       "homeProTeamId": 28,
+       "awayProTeamId": 17
+      }
+     ],
+     "10": [
+      {
+       "id": 401892463,
+       "date": 1791507600000,
+       "homeProTeamId": 3,
+       "awayProTeamId": 17
+      }
+     ],
+     "12": [
+      {
+       "id": 401892478,
+       "date": 1791673200000,
+       "homeProTeamId": 17,
+       "awayProTeamId": 21
+      }
+     ]
+    }
+   },
+   {
+    "id": 18,
+    "abbrev": "SJ",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891823,
+       "date": 1790906400000,
+       "homeProTeamId": 18,
+       "awayProTeamId": 26
+      }
+     ],
+     "5": [
+      {
+       "id": 401892441,
+       "date": 1791079200000,
+       "homeProTeamId": 18,
+       "awayProTeamId": 8
+      }
+     ],
+     "7": [
+      {
+       "id": 401892448,
+       "date": 1791244800000,
+       "homeProTeamId": 9,
+       "awayProTeamId": 18
+      }
+     ],
+     "10": [
+      {
+       "id": 401891825,
+       "date": 1791504000000,
+       "homeProTeamId": 19,
+       "awayProTeamId": 18
+      }
+     ],
+     "12": [
+      {
+       "id": 401892471,
+       "date": 1791662400000,
+       "homeProTeamId": 18,
+       "awayProTeamId": 6
+      }
+     ]
+    }
+   },
+   {
+    "id": 19,
+    "abbrev": "STL",
+    "proGamesByScoringPeriod": {
+     "4": [
+      {
+       "id": 401891782,
+       "date": 1790989200000,
+       "homeProTeamId": 9,
+       "awayProTeamId": 19
+      }
+     ],
+     "5": [
+      {
+       "id": 401892439,
+       "date": 1791075600000,
+       "homeProTeamId": 17,
+       "awayProTeamId": 19
+      }
+     ],
+     "8": [
+      {
+       "id": 401891779,
+       "date": 1791331200000,
+       "homeProTeamId": 4,
+       "awayProTeamId": 19
+      }
+     ],
+     "10": [
+      {
+       "id": 401891825,
+       "date": 1791504000000,
+       "homeProTeamId": 19,
+       "awayProTeamId": 18
+      }
+     ],
+     "12": [
+      {
+       "id": 401892477,
+       "date": 1791673200000,
+       "homeProTeamId": 19,
+       "awayProTeamId": 29
+      }
+     ]
+    }
+   },
+   {
+    "id": 20,
+    "abbrev": "TB",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891819,
+       "date": 1790895600000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 20
+      }
+     ],
+     "5": [
+      {
+       "id": 401891826,
+       "date": 1791068400000,
+       "homeProTeamId": 20,
+       "awayProTeamId": 23
+      }
+     ],
+     "7": [
+      {
+       "id": 401892445,
+       "date": 1791241200000,
+       "homeProTeamId": 20,
+       "awayProTeamId": 15
+      }
+     ],
+     "10": [
+      {
+       "id": 401892460,
+       "date": 1791500400000,
+       "homeProTeamId": 20,
+       "awayProTeamId": 30
+      }
+     ],
+     "12": [
+      {
+       "id": 401892479,
+       "date": 1791675000000,
+       "homeProTeamId": 12,
+       "awayProTeamId": 20
+      }
+     ]
+    }
+   },
+   {
+    "id": 21,
+    "abbrev": "TOR",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891827,
+       "date": 1790722800000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 10
+      }
+     ],
+     "2": [
+      {
+       "id": 401892431,
+       "date": 1790811000000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 12
+      }
+     ],
+     "5": [
+      {
+       "id": 401892434,
+       "date": 1791068400000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 14
+      }
+     ],
+     "8": [
+      {
+       "id": 401892449,
+       "date": 1791327600000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 27
+      }
+     ],
+     "10": [
+      {
+       "id": 401892464,
+       "date": 1791511200000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 21
+      }
+     ],
+     "12": [
+      {
+       "id": 401892478,
+       "date": 1791673200000,
+       "homeProTeamId": 17,
+       "awayProTeamId": 21
+      }
+     ]
+    }
+   },
+   {
+    "id": 22,
+    "abbrev": "VAN",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891804,
+       "date": 1790733600000,
+       "homeProTeamId": 6,
+       "awayProTeamId": 22
+      }
+     ],
+     "3": [
+      {
+       "id": 401891829,
+       "date": 1790906400000,
+       "homeProTeamId": 22,
+       "awayProTeamId": 6
+      }
+     ],
+     "5": [
+      {
+       "id": 401892440,
+       "date": 1791079200000,
+       "homeProTeamId": 22,
+       "awayProTeamId": 3
+      }
+     ],
+     "6": [
+      {
+       "id": 401892444,
+       "date": 1791162000000,
+       "homeProTeamId": 22,
+       "awayProTeamId": 37
+      }
+     ],
+     "10": [
+      {
+       "id": 401892461,
+       "date": 1791500400000,
+       "homeProTeamId": 7,
+       "awayProTeamId": 22
+      }
+     ],
+     "12": [
+      {
+       "id": 401892470,
+       "date": 1791660600000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 22
+      }
+     ],
+     "13": [
+      {
+       "id": 401892483,
+       "date": 1791756000000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 22
+      }
+     ]
+    }
+   },
+   {
+    "id": 23,
+    "abbrev": "WSH",
+    "proGamesByScoringPeriod": {
+     "4": [
+      {
+       "id": 401892432,
+       "date": 1790982000000,
+       "homeProTeamId": 7,
+       "awayProTeamId": 23
+      }
+     ],
+     "5": [
+      {
+       "id": 401891826,
+       "date": 1791068400000,
+       "homeProTeamId": 20,
+       "awayProTeamId": 23
+      }
+     ],
+     "9": [
+      {
+       "id": 401891830,
+       "date": 1791415800000,
+       "homeProTeamId": 23,
+       "awayProTeamId": 16
+      }
+     ],
+     "11": [
+      {
+       "id": 401892466,
+       "date": 1791586800000,
+       "homeProTeamId": 23,
+       "awayProTeamId": 13
+      }
+     ],
+     "13": [
+      {
+       "id": 401892482,
+       "date": 1791752400000,
+       "homeProTeamId": 23,
+       "awayProTeamId": 124292
+      }
+     ]
+    }
+   },
+   {
+    "id": 25,
+    "abbrev": "ANA",
+    "proGamesByScoringPeriod": {
+     "4": [
+      {
+       "id": 401892433,
+       "date": 1790992800000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 25
+      }
+     ],
+     "6": [
+      {
+       "id": 401891778,
+       "date": 1791158400000,
+       "homeProTeamId": 25,
+       "awayProTeamId": 26
+      }
+     ],
+     "9": [
+      {
+       "id": 401892456,
+       "date": 1791424800000,
+       "homeProTeamId": 25,
+       "awayProTeamId": 6
+      }
+     ],
+     "11": [
+      {
+       "id": 401892468,
+       "date": 1791590400000,
+       "homeProTeamId": 28,
+       "awayProTeamId": 25
+      }
+     ],
+     "12": [
+      {
+       "id": 401892480,
+       "date": 1791684000000,
+       "homeProTeamId": 3,
+       "awayProTeamId": 25
+      }
+     ]
+    }
+   },
+   {
+    "id": 26,
+    "abbrev": "FLA",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891773,
+       "date": 1790715600000,
+       "homeProTeamId": 7,
+       "awayProTeamId": 26
+      }
+     ],
+     "3": [
+      {
+       "id": 401891823,
+       "date": 1790906400000,
+       "homeProTeamId": 18,
+       "awayProTeamId": 26
+      }
+     ],
+     "6": [
+      {
+       "id": 401891778,
+       "date": 1791158400000,
+       "homeProTeamId": 25,
+       "awayProTeamId": 26
+      }
+     ],
+     "8": [
+      {
+       "id": 401891806,
+       "date": 1791338400000,
+       "homeProTeamId": 8,
+       "awayProTeamId": 26
+      }
+     ],
+     "12": [
+      {
+       "id": 401891805,
+       "date": 1791669600000,
+       "homeProTeamId": 26,
+       "awayProTeamId": 30
+      }
+     ],
+     "14": [
+      {
+       "id": 401892485,
+       "date": 1791824400000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 26
+      }
+     ]
+    }
+   },
+   {
+    "id": 27,
+    "abbrev": "NSH",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891816,
+       "date": 1790899200000,
+       "homeProTeamId": 27,
+       "awayProTeamId": 30
+      }
+     ],
+     "5": [
+      {
+       "id": 401892438,
+       "date": 1791072000000,
+       "homeProTeamId": 27,
+       "awayProTeamId": 9
+      }
+     ],
+     "8": [
+      {
+       "id": 401892449,
+       "date": 1791327600000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 27
+      }
+     ],
+     "10": [
+      {
+       "id": 401892459,
+       "date": 1791500400000,
+       "homeProTeamId": 10,
+       "awayProTeamId": 27
+      }
+     ],
+     "12": [
+      {
+       "id": 401892474,
+       "date": 1791673200000,
+       "homeProTeamId": 14,
+       "awayProTeamId": 27
+      }
+     ]
+    }
+   },
+   {
+    "id": 28,
+    "abbrev": "WPG",
+    "proGamesByScoringPeriod": {
+     "4": [
+      {
+       "id": 401891831,
+       "date": 1790985600000,
+       "homeProTeamId": 28,
+       "awayProTeamId": 1
+      }
+     ],
+     "6": [
+      {
+       "id": 401892442,
+       "date": 1791133200000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 28
+      }
+     ],
+     "7": [
+      {
+       "id": 401892447,
+       "date": 1791243000000,
+       "homeProTeamId": 16,
+       "awayProTeamId": 28
+      }
+     ],
+     "9": [
+      {
+       "id": 401892455,
+       "date": 1791415800000,
+       "homeProTeamId": 28,
+       "awayProTeamId": 17
+      }
+     ],
+     "11": [
+      {
+       "id": 401892468,
+       "date": 1791590400000,
+       "homeProTeamId": 28,
+       "awayProTeamId": 25
+      }
+     ]
+    }
+   },
+   {
+    "id": 29,
+    "abbrev": "CBJ",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891781,
+       "date": 1790895600000,
+       "homeProTeamId": 29,
+       "awayProTeamId": 2
+      }
+     ],
+     "5": [
+      {
+       "id": 401892436,
+       "date": 1791068400000,
+       "homeProTeamId": 29,
+       "awayProTeamId": 129764
+      }
+     ],
+     "11": [
+      {
+       "id": 401892467,
+       "date": 1791586800000,
+       "homeProTeamId": 29,
+       "awayProTeamId": 16
+      }
+     ],
+     "12": [
+      {
+       "id": 401892477,
+       "date": 1791673200000,
+       "homeProTeamId": 19,
+       "awayProTeamId": 29
+      }
+     ]
+    }
+   },
+   {
+    "id": 30,
+    "abbrev": "MIN",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891816,
+       "date": 1790899200000,
+       "homeProTeamId": 27,
+       "awayProTeamId": 30
+      }
+     ],
+     "5": [
+      {
+       "id": 401891814,
+       "date": 1791072000000,
+       "homeProTeamId": 30,
+       "awayProTeamId": 1
+      }
+     ],
+     "8": [
+      {
+       "id": 401892453,
+       "date": 1791327600000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 30
+      }
+     ],
+     "10": [
+      {
+       "id": 401892460,
+       "date": 1791500400000,
+       "homeProTeamId": 20,
+       "awayProTeamId": 30
+      }
+     ],
+     "12": [
+      {
+       "id": 401891805,
+       "date": 1791669600000,
+       "homeProTeamId": 26,
+       "awayProTeamId": 30
+      }
+     ],
+     "14": [
+      {
+       "id": 401892487,
+       "date": 1791849600000,
+       "homeProTeamId": 30,
+       "awayProTeamId": 37
+      }
+     ]
+    }
+   },
+   {
+    "id": 129764,
+    "abbrev": "UTA",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891828,
+       "date": 1790904600000,
+       "homeProTeamId": 129764,
+       "awayProTeamId": 4
+      }
+     ],
+     "5": [
+      {
+       "id": 401892436,
+       "date": 1791068400000,
+       "homeProTeamId": 29,
+       "awayProTeamId": 129764
+      }
+     ],
+     "6": [
+      {
+       "id": 401892443,
+       "date": 1791151200000,
+       "homeProTeamId": 13,
+       "awayProTeamId": 129764
+      }
+     ],
+     "8": [
+      {
+       "id": 401892451,
+       "date": 1791327600000,
+       "homeProTeamId": 11,
+       "awayProTeamId": 129764
+      }
+     ],
+     "10": [
+      {
+       "id": 401892457,
+       "date": 1791500400000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 129764
+      }
+     ],
+     "12": [
+      {
+       "id": 401892472,
+       "date": 1791673200000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 129764
+      }
+     ]
+    }
+   },
+   {
+    "id": 37,
+    "abbrev": "VGK",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891775,
+       "date": 1790735400000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 4
+      }
+     ],
+     "4": [
+      {
+       "id": 401892433,
+       "date": 1790992800000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 25
+      }
+     ],
+     "6": [
+      {
+       "id": 401892444,
+       "date": 1791162000000,
+       "homeProTeamId": 22,
+       "awayProTeamId": 37
+      }
+     ],
+     "8": [
+      {
+       "id": 401892454,
+       "date": 1791334800000,
+       "homeProTeamId": 124292,
+       "awayProTeamId": 37
+      }
+     ],
+     "10": [
+      {
+       "id": 401892464,
+       "date": 1791511200000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 21
+      }
+     ],
+     "12": [
+      {
+       "id": 401892481,
+       "date": 1791684000000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 8
+      }
+     ],
+     "14": [
+      {
+       "id": 401892487,
+       "date": 1791849600000,
+       "homeProTeamId": 30,
+       "awayProTeamId": 37
+      }
+     ]
+    }
+   },
+   {
+    "id": 0,
+    "abbrev": "FA",
+    "proGamesByScoringPeriod": {}
+   },
+   {
+    "id": 1,
+    "abbrev": "BOS",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891774,
+       "date": 1790726400000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 13
+      }
+     ],
+     "4": [
+      {
+       "id": 401891831,
+       "date": 1790985600000,
+       "homeProTeamId": 28,
+       "awayProTeamId": 1
+      }
+     ],
+     "5": [
+      {
+       "id": 401891814,
+       "date": 1791072000000,
+       "homeProTeamId": 30,
+       "awayProTeamId": 1
+      }
+     ],
+     "7": [
+      {
+       "id": 401892446,
+       "date": 1791243000000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 14
+      }
+     ],
+     "10": [
+      {
+       "id": 401892457,
+       "date": 1791500400000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 129764
+      }
+     ],
+     "12": [
+      {
+       "id": 401892469,
+       "date": 1791651600000,
+       "homeProTeamId": 1,
+       "awayProTeamId": 15
+      }
+     ]
+    }
+   },
+   {
+    "id": 2,
+    "abbrev": "BUF",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891781,
+       "date": 1790895600000,
+       "homeProTeamId": 29,
+       "awayProTeamId": 2
+      }
+     ],
+     "5": [
+      {
+       "id": 401891776,
+       "date": 1791068400000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 4
+      }
+     ],
+     "8": [
+      {
+       "id": 401892453,
+       "date": 1791327600000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 30
+      }
+     ],
+     "10": [
+      {
+       "id": 401892458,
+       "date": 1791500400000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 9
+      }
+     ],
+     "12": [
+      {
+       "id": 401892472,
+       "date": 1791673200000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 129764
+      }
+     ],
+     "14": [
+      {
+       "id": 401892485,
+       "date": 1791824400000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 26
+      }
+     ]
+    }
+   },
+   {
+    "id": 124292,
+    "abbrev": "SEA",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891777,
+       "date": 1790902800000,
+       "homeProTeamId": 3,
+       "awayProTeamId": 124292
+      }
+     ],
+     "5": [
+      {
+       "id": 401892437,
+       "date": 1791068400000,
+       "homeProTeamId": 6,
+       "awayProTeamId": 124292
+      }
+     ],
+     "6": [
+      {
+       "id": 401891824,
+       "date": 1791158400000,
+       "homeProTeamId": 124292,
+       "awayProTeamId": 3
+      }
+     ],
+     "8": [
+      {
+       "id": 401892454,
+       "date": 1791334800000,
+       "homeProTeamId": 124292,
+       "awayProTeamId": 37
+      }
+     ],
+     "11": [
+      {
+       "id": 401892465,
+       "date": 1791586800000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 124292
+      }
+     ],
+     "13": [
+      {
+       "id": 401892482,
+       "date": 1791752400000,
+       "homeProTeamId": 23,
+       "awayProTeamId": 124292
+      }
+     ]
+    }
+   },
+   {
+    "id": 3,
+    "abbrev": "CGY",
+    "proGamesByScoringPeriod": {
+     "3": [
+      {
+       "id": 401891777,
+       "date": 1790902800000,
+       "homeProTeamId": 3,
+       "awayProTeamId": 124292
+      }
+     ],
+     "5": [
+      {
+       "id": 401892440,
+       "date": 1791079200000,
+       "homeProTeamId": 22,
+       "awayProTeamId": 3
+      }
+     ],
+     "6": [
+      {
+       "id": 401891824,
+       "date": 1791158400000,
+       "homeProTeamId": 124292,
+       "awayProTeamId": 3
+      }
+     ],
+     "10": [
+      {
+       "id": 401892463,
+       "date": 1791507600000,
+       "homeProTeamId": 3,
+       "awayProTeamId": 17
+      }
+     ],
+     "12": [
+      {
+       "id": 401892480,
+       "date": 1791684000000,
+       "homeProTeamId": 3,
+       "awayProTeamId": 25
+      }
+     ]
+    }
+   },
+   {
+    "id": 4,
+    "abbrev": "CHI",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891775,
+       "date": 1790735400000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 4
+      }
+     ],
+     "3": [
+      {
+       "id": 401891828,
+       "date": 1790904600000,
+       "homeProTeamId": 129764,
+       "awayProTeamId": 4
+      }
+     ],
+     "5": [
+      {
+       "id": 401891776,
+       "date": 1791068400000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 4
+      }
+     ],
+     "8": [
+      {
+       "id": 401891779,
+       "date": 1791331200000,
+       "homeProTeamId": 4,
+       "awayProTeamId": 19
+      }
+     ],
+     "10": [
+      {
+       "id": 401892462,
+       "date": 1791502200000,
+       "homeProTeamId": 12,
+       "awayProTeamId": 4
+      }
+     ],
+     "12": [
+      {
+       "id": 401892476,
+       "date": 1791673200000,
+       "homeProTeamId": 4,
+       "awayProTeamId": 7
+      }
+     ]
+    }
+   },
+   {
+    "id": 5,
+    "abbrev": "DET",
+    "proGamesByScoringPeriod": {
+     "4": [
+      {
+       "id": 401891803,
+       "date": 1790980200000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 13
+      }
+     ],
+     "6": [
+      {
+       "id": 401892442,
+       "date": 1791133200000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 28
+      }
+     ],
+     "8": [
+      {
+       "id": 401892450,
+       "date": 1791327600000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 14
+      }
+     ],
+     "11": [
+      {
+       "id": 401892465,
+       "date": 1791586800000,
+       "homeProTeamId": 5,
+       "awayProTeamId": 124292
+      }
+     ],
+     "12": [
+      {
+       "id": 401892473,
+       "date": 1791673200000,
+       "homeProTeamId": 10,
+       "awayProTeamId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 6,
+    "abbrev": "EDM",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891804,
+       "date": 1790733600000,
+       "homeProTeamId": 6,
+       "awayProTeamId": 22
+      }
+     ],
+     "3": [
+      {
+       "id": 401891829,
+       "date": 1790906400000,
+       "homeProTeamId": 22,
+       "awayProTeamId": 6
+      }
+     ],
+     "5": [
+      {
+       "id": 401892437,
+       "date": 1791068400000,
+       "homeProTeamId": 6,
+       "awayProTeamId": 124292
+      }
+     ],
+     "9": [
+      {
+       "id": 401892456,
+       "date": 1791424800000,
+       "homeProTeamId": 25,
+       "awayProTeamId": 6
+      }
+     ],
+     "12": [
+      {
+       "id": 401892471,
+       "date": 1791662400000,
+       "homeProTeamId": 18,
+       "awayProTeamId": 6
+      }
+     ]
+    }
+   },
+   {
+    "id": 7,
+    "abbrev": "CAR",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891773,
+       "date": 1790715600000,
+       "homeProTeamId": 7,
+       "awayProTeamId": 26
+      }
+     ],
+     "4": [
+      {
+       "id": 401892432,
+       "date": 1790982000000,
+       "homeProTeamId": 7,
+       "awayProTeamId": 23
+      }
+     ],
+     "5": [
+      {
+       "id": 401892435,
+       "date": 1791068400000,
+       "homeProTeamId": 15,
+       "awayProTeamId": 7
+      }
+     ],
+     "8": [
+      {
+       "id": 401891815,
+       "date": 1791327600000,
+       "homeProTeamId": 10,
+       "awayProTeamId": 7
+      }
+     ],
+     "10": [
+      {
+       "id": 401892461,
+       "date": 1791500400000,
+       "homeProTeamId": 7,
+       "awayProTeamId": 22
+      }
+     ],
+     "12": [
+      {
+       "id": 401892476,
+       "date": 1791673200000,
+       "homeProTeamId": 4,
+       "awayProTeamId": 7
+      }
+     ],
+     "13": [
+      {
+       "id": 401892484,
+       "date": 1791759600000,
+       "homeProTeamId": 15,
+       "awayProTeamId": 7
+      }
+     ]
+    }
+   },
+   {
+    "id": 8,
+    "abbrev": "LA",
+    "proGamesByScoringPeriod": {
+     "2": [
+      {
+       "id": 401891780,
+       "date": 1790820000000,
+       "homeProTeamId": 17,
+       "awayProTeamId": 8
+      }
+     ],
+     "5": [
+      {
+       "id": 401892441,
+       "date": 1791079200000,
+       "homeProTeamId": 18,
+       "awayProTeamId": 8
+      }
+     ],
+     "8": [
+      {
+       "id": 401891806,
+       "date": 1791338400000,
+       "homeProTeamId": 8,
+       "awayProTeamId": 26
+      }
+     ],
+     "12": [
+      {
+       "id": 401892481,
+       "date": 1791684000000,
+       "homeProTeamId": 37,
+       "awayProTeamId": 8
+      }
+     ]
+    }
+   },
+   {
+    "id": 9,
+    "abbrev": "DAL",
+    "proGamesByScoringPeriod": {
+     "4": [
+      {
+       "id": 401891782,
+       "date": 1790989200000,
+       "homeProTeamId": 9,
+       "awayProTeamId": 19
+      }
+     ],
+     "5": [
+      {
+       "id": 401892438,
+       "date": 1791072000000,
+       "homeProTeamId": 27,
+       "awayProTeamId": 9
+      }
+     ],
+     "7": [
+      {
+       "id": 401892448,
+       "date": 1791244800000,
+       "homeProTeamId": 9,
+       "awayProTeamId": 18
+      }
+     ],
+     "10": [
+      {
+       "id": 401892458,
+       "date": 1791500400000,
+       "homeProTeamId": 2,
+       "awayProTeamId": 9
+      }
+     ],
+     "12": [
+      {
+       "id": 401892475,
+       "date": 1791673200000,
+       "homeProTeamId": 16,
+       "awayProTeamId": 9
+      }
+     ]
+    }
+   },
+   {
+    "id": 10,
+    "abbrev": "MTL",
+    "proGamesByScoringPeriod": {
+     "1": [
+      {
+       "id": 401891827,
+       "date": 1790722800000,
+       "homeProTeamId": 21,
+       "awayProTeamId": 10
+      }
+     ],
+     "5": [
+      {
+       "id": 401891822,
+       "date": 1791068400000,
+       "homeProTeamId": 16,
+       "awayProTeamId": 10
+      }
+     ],
+     "8": [
+      {
+       "id": 401891815,
+       "date": 1791327600000,
+       "homeProTeamId": 10,
+       "awayProTeamId": 7
+      }
+     ],
+     "10": [
+      {
+       "id": 401892459,
+       "date": 1791500400000,
+       "homeProTeamId": 10,
+       "awayProTeamId": 27
+      }
+     ],
+     "12": [
+      {
+       "id": 401892473,
+       "date": 1791673200000,
+       "homeProTeamId": 10,
+       "awayProTeamId": 5
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

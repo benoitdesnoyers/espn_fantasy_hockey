@@ -1,0 +1,17 @@
+{
+  "name": "espn-fantasy-hockey-cards",
+  "private": true,
+  "description": "Tooling for the dashboard cards bundled with the ESPN Fantasy Hockey integration.",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write . && eslint --fix .",
+    "test": "node --test \"tests/frontend/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.11.0",
+    "globals": "17.12.0",
+    "prettier": "3.9.9"
+  }
+}

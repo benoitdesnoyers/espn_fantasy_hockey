@@ -31,10 +31,73 @@
       "reauth_successful": "Cookies updated successfully."
     }
   },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ESPN Fantasy Hockey options",
+        "data": {
+          "my_team": "My team",
+          "live_interval": "Update interval during games",
+          "normal_interval": "Update interval on game days"
+        },
+        "data_description": {
+          "my_team": "Used for lineup alerts and as the dashboard cards' default. Automatic uses the team owned by the ESPN account whose cookies you entered.",
+          "live_interval": "How often to refresh while NHL games are being played.",
+          "normal_interval": "How often to refresh on game days outside games. With no games in the next day, updates are hourly."
+        }
+      }
+    }
+  },
   "entity": {
+    "event": {
+      "transactions": {
+        "name": "Transactions",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "free_agent": "Free agent",
+              "trade": "Trade",
+              "waiver": "Waiver claim"
+            }
+          }
+        }
+      }
+    },
     "sensor": {
       "matchup_period": {
         "name": "Matchup period"
+      },
+      "latest_transaction": {
+        "name": "Latest transaction"
+      },
+      "lineup_issues": {
+        "name": "Lineup issues"
+      },
+      "team_standing": {
+        "name": "{team} standing"
+      },
+      "team_matchup": {
+        "name": "{team} matchup"
+      },
+      "team_roster": {
+        "name": "{team} roster"
+      }
+    }
+  },
+  "issues": {
+    "new_season": {
+      "title": "{league}: season {season} is available",
+      "fix_flow": {
+        "step": {
+          "confirm": {
+            "title": "Switch to season {season}",
+            "description": "ESPN has renewed this league. Switch the integration to season {season}? Entities and dashboards stay the same; they start showing the new season's data."
+          }
+        },
+        "abort": {
+          "already_configured": "Season {season} of this league is already set up as a separate entry. Remove one of them.",
+          "entry_removed": "This league is no longer configured."
+        }
       }
     }
   }

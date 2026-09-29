@@ -10,11 +10,20 @@ CONF_SEASON: Final = "season"
 CONF_ESPN_S2: Final = "espn_s2"
 CONF_SWID: Final = "swid"
 
+# Options
+CONF_MY_TEAM: Final = "my_team"
+CONF_LIVE_INTERVAL: Final = "live_interval"
+CONF_NORMAL_INTERVAL: Final = "normal_interval"
+MY_TEAM_AUTO: Final = "auto"
+DEFAULT_LIVE_INTERVAL: Final = 2  # minutes, while NHL games are being played
+DEFAULT_NORMAL_INTERVAL: Final = 15  # minutes, on game days outside games
+
 # "fhl" is ESPN's game code for fantasy hockey.
-API_BASE_URL: Final = (
+API_SEASON_URL: Final = (
     "https://lm-api-reads.fantasy.espn.com/apis/v3/games/fhl/seasons/{season}"
-    "/segments/0/leagues/{league_id}"
 )
+API_BASE_URL: Final = API_SEASON_URL + "/segments/0/leagues/{league_id}"
+API_PLAYERS_URL: Final = API_SEASON_URL + "/players"
 API_VIEWS: Final = (
     "mTeam",
     "mMatchup",
@@ -25,7 +34,29 @@ API_VIEWS: Final = (
     "mStatus",
 )
 
-DEFAULT_SCAN_INTERVAL: Final = timedelta(minutes=15)
+# Polling. Live: from shortly before a game starts until it has surely ended.
+IDLE_INTERVAL: Final = timedelta(hours=1)  # no NHL games in the next day
+LIVE_LEAD_TIME: Final = timedelta(minutes=15)
+LIVE_GAME_LENGTH: Final = timedelta(hours=3, minutes=30)
+TRANSACTIONS_INTERVAL: Final = timedelta(minutes=15)
+SEASON_CHECK_INTERVAL: Final = timedelta(days=1)
+SCHEDULE_REFRESH_INTERVAL: Final = timedelta(days=1)
+
+# Transaction types that change a roster; lineup moves ("ROSTER") are left out.
+TRANSACTION_TYPES: Final = {
+    "FREEAGENT": "free_agent",
+    "WAIVER": "waiver",
+    "TRADE_ACCEPT": "trade",
+    "TRADE_UPHOLD": "trade",
+}
+EVENT_TRANSACTION: Final = f"{DOMAIN}_transaction"
+RECENT_TRANSACTIONS: Final = 10
+
+# Fantasy points per NHL team game are estimated from season projections.
+NHL_GAMES_PER_SEASON: Final = 82
+# ESPN hockey matchups run Monday to Sunday.
+MATCHUP_LAST_WEEKDAY: Final = 6  # Sunday
+CATEGORY_SCORING_TYPES: Final = frozenset({"H2H_CATEGORY", "H2H_MOST_CATEGORIES"})
 
 # ESPN's resizing proxy; the raw headshots are ~1040x760 and ~250 KB each.
 HEADSHOT_URL: Final = (
@@ -38,8 +69,10 @@ HEADSHOT_URL: Final = (
 PRIVATE_LOGO_HOST: Final = "mystique-api.fantasy.espn.com"
 LOGO_PROXY_URL: Final = "/api/espn_fantasy_hockey/logo/{entry_id}/{team_id}"
 
-# Dashboard cards shipped with the integration (frontend/espn-fantasy-cards.js).
-CARDS_URL: Final = "/espn_fantasy_hockey/espn-fantasy-cards.js"
+# Dashboard cards shipped with the integration, served from frontend/ under
+# CARDS_URL/<build id>/ and loaded through CARDS_ENTRYPOINT.
+CARDS_URL: Final = "/espn_fantasy_hockey/cards"
+CARDS_ENTRYPOINT: Final = "espn-fantasy-cards.js"
 
 # player.defaultPositionId
 POSITIONS: Final = {1: "C", 2: "LW", 3: "RW", 4: "D", 5: "G"}
@@ -56,8 +89,12 @@ LINEUP_SLOTS: Final = {
     7: "BE",
     8: "IR",
 }
+BENCH_SLOTS: Final = frozenset({7, 8})  # lineup slot ids that don't score
+# Injury statuses that keep a player out of a game.
+UNAVAILABLE_STATUSES: Final = frozenset({"OUT", "INJURY_RESERVE", "SUSPENSION"})
 
-# player.proTeamId -> abbreviation (from .../games/fhl/seasons/<year>?view=proTeamSchedules_wl)
+# player.proTeamId -> abbreviation.
+# Source: .../games/fhl/seasons/<year>?view=proTeamSchedules_wl
 PRO_TEAMS: Final = {
     0: "FA",
     1: "BOS",
@@ -118,7 +155,7 @@ STAT_NAMES: Final = {
     "23": "faceoffs_won",
     "24": "faceoffs_lost",
     "34": "games_played",
-    "27": "toi_per_game",
+    "27": "toi_per_game_seconds",
     # Goalies
     "0": "games_started",
     "1": "wins",
@@ -132,8 +169,47 @@ STAT_NAMES: Final = {
     "11": "save_pct",
 }
 
+# Short labels for category leagues, keyed by STAT_NAMES value.
+STAT_ABBREVIATIONS: Final = {
+    "goals": "G",
+    "assists": "A",
+    "points": "PTS",
+    "plus_minus": "+/-",
+    "pim": "PIM",
+    "ppg": "PPG",
+    "ppa": "PPA",
+    "ppp": "PPP",
+    "shg": "SHG",
+    "sha": "SHA",
+    "shp": "SHP",
+    "gwg": "GWG",
+    "hat_tricks": "HAT",
+    "shots": "SOG",
+    "hits": "HIT",
+    "blocks": "BLK",
+    "faceoffs_won": "FOW",
+    "faceoffs_lost": "FOL",
+    "games_played": "GP",
+    "games_started": "GS",
+    "wins": "W",
+    "losses": "L",
+    "ot_losses": "OTL",
+    "shots_against": "SA",
+    "goals_against": "GA",
+    "saves": "SV",
+    "shutouts": "SO",
+    "gaa": "GAA",
+    "save_pct": "SV%",
+}
+
 # stats[] entries: statSourceId 0 = actual, 1 = projected;
 # statSplitTypeId 0 = season, 1 = last 7 days, 2 = last 15, 3 = last 30.
 STAT_SOURCE_ACTUAL: Final = 0
 STAT_SOURCE_PROJECTED: Final = 1
-STAT_SPLITS: Final = {0: "season", 1: "last_7", 2: "last_15", 3: "last_30"}
+STAT_SPLIT_SEASON: Final = 0
+STAT_SPLITS: Final = {
+    STAT_SPLIT_SEASON: "season",
+    1: "last_7",
+    2: "last_15",
+    3: "last_30",
+}

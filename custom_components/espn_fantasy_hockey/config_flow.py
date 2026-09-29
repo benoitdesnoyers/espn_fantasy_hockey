@@ -7,21 +7,56 @@ from datetime import date
 import logging
 from typing import Any
 
+from homeassistant.config_entries import (
+    ConfigEntry,
+    ConfigFlow,
+    ConfigFlowResult,
+    OptionsFlow,
+)
+from homeassistant.core import callback
+from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.helpers.selector import (
+    NumberSelector,
+    NumberSelectorConfig,
+    NumberSelectorMode,
+    SelectOptionDict,
+    SelectSelector,
+    SelectSelectorConfig,
+    SelectSelectorMode,
+)
 import voluptuous as vol
 
-from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
-from homeassistant.helpers.aiohttp_client import async_get_clientsession
-
-from .api import EspnApiError, EspnAuthError, EspnFantasyHockeyApi, EspnLeagueNotFound, League
-from .const import CONF_ESPN_S2, CONF_LEAGUE_ID, CONF_SEASON, CONF_SWID, DOMAIN
+from .api import (
+    EspnApiError,
+    EspnAuthError,
+    EspnFantasyHockeyApi,
+    EspnLeagueNotFound,
+    League,
+)
+from .const import (
+    CONF_ESPN_S2,
+    CONF_LEAGUE_ID,
+    CONF_LIVE_INTERVAL,
+    CONF_MY_TEAM,
+    CONF_NORMAL_INTERVAL,
+    CONF_SEASON,
+    CONF_SWID,
+    DEFAULT_LIVE_INTERVAL,
+    DEFAULT_NORMAL_INTERVAL,
+    DOMAIN,
+    MY_TEAM_AUTO,
+)
 
 _LOGGER = logging.getLogger(__name__)
+
+# From August on, the upcoming NHL season is the one people are setting up.
+SEASON_ROLLOVER_MONTH = 8
 
 
 def _default_season() -> int:
     """ESPN names a hockey season after the year it ends (2026-27 -> 2027)."""
     today = date.today()
-    return today.year + 1 if today.month >= 8 else today.year
+    return today.year + 1 if today.month >= SEASON_ROLLOVER_MONTH else today.year
 
 
 class EspnFantasyHockeyConfigFlow(ConfigFlow, domain=DOMAIN):
@@ -29,7 +64,15 @@ class EspnFantasyHockeyConfigFlow(ConfigFlow, domain=DOMAIN):
 
     VERSION = 1
 
-    async def _async_validate(self, data: Mapping[str, Any]) -> tuple[League | None, dict[str, str]]:
+    @staticmethod
+    @callback
+    def async_get_options_flow(config_entry: ConfigEntry) -> OptionsFlow:
+        """Create the options flow."""
+        return EspnFantasyHockeyOptionsFlow()
+
+    async def _async_validate(
+        self, data: Mapping[str, Any]
+    ) -> tuple[League | None, dict[str, str]]:
         api = EspnFantasyHockeyApi(
             async_get_clientsession(self.hass),
             league_id=data[CONF_LEAGUE_ID],
@@ -49,12 +92,16 @@ class EspnFantasyHockeyConfigFlow(ConfigFlow, domain=DOMAIN):
             _LOGGER.exception("Unexpected error validating ESPN league")
             return None, {"base": "unknown"}
 
-    async def async_step_user(self, user_input: dict[str, Any] | None = None) -> ConfigFlowResult:
+    async def async_step_user(
+        self, user_input: dict[str, Any] | None = None
+    ) -> ConfigFlowResult:
         """Ask for league details."""
         errors: dict[str, str] = {}
         if user_input is not None:
             user_input = {k: v for k, v in user_input.items() if v not in (None, "")}
-            await self.async_set_unique_id(f"{user_input[CONF_LEAGUE_ID]}_{user_input[CONF_SEASON]}")
+            await self.async_set_unique_id(
+                f"{user_input[CONF_LEAGUE_ID]}_{user_input[CONF_SEASON]}"
+            )
             self._abort_if_unique_id_configured()
 
             league, errors = await self._async_validate(user_input)
@@ -77,7 +124,9 @@ class EspnFantasyHockeyConfigFlow(ConfigFlow, domain=DOMAIN):
             errors=errors,
         )
 
-    async def async_step_reauth(self, entry_data: Mapping[str, Any]) -> ConfigFlowResult:
+    async def async_step_reauth(
+        self, entry_data: Mapping[str, Any]
+    ) -> ConfigFlowResult:
         """Triggered when ESPN rejects the stored cookies."""
         return await self.async_step_reauth_confirm()
 
@@ -100,3 +149,72 @@ class EspnFantasyHockeyConfigFlow(ConfigFlow, domain=DOMAIN):
             ),
             errors=errors,
         )
+
+
+def _minutes(minimum: int, maximum: int) -> NumberSelector:
+    return NumberSelector(
+        NumberSelectorConfig(
+            min=minimum,
+            max=maximum,
+            step=1,
+            unit_of_measurement="min",
+            mode=NumberSelectorMode.BOX,
+        )
+    )
+
+
+class EspnFantasyHockeyOptionsFlow(OptionsFlow):
+    """Choose "my team" and how often to poll ESPN."""
+
+    async def async_step_init(
+        self, user_input: dict[str, Any] | None = None
+    ) -> ConfigFlowResult:
+        """Show the options form."""
+        if user_input is not None:
+            return self.async_create_entry(
+                data={
+                    CONF_MY_TEAM: user_input[CONF_MY_TEAM],
+                    CONF_LIVE_INTERVAL: int(user_input[CONF_LIVE_INTERVAL]),
+                    CONF_NORMAL_INTERVAL: int(user_input[CONF_NORMAL_INTERVAL]),
+                }
+            )
+
+        # Team names come from the running integration; without it, only "auto".
+        teams: list[SelectOptionDict] = []
+        detected = None
+        if coordinator := getattr(self.config_entry, "runtime_data", None):
+            league = coordinator.data.league
+            detected = (
+                league.teams.get(league.my_team_id) if league.my_team_id else None
+            )
+            teams = [
+                SelectOptionDict(value=str(team.id), label=team.name)
+                for team in sorted(league.teams.values(), key=lambda t: t.name.lower())
+            ]
+        auto_label = f"Automatic ({detected.name})" if detected else "Automatic"
+
+        options = self.config_entry.options
+        schema = vol.Schema(
+            {
+                vol.Required(
+                    CONF_MY_TEAM, default=options.get(CONF_MY_TEAM, MY_TEAM_AUTO)
+                ): SelectSelector(
+                    SelectSelectorConfig(
+                        options=[
+                            SelectOptionDict(value=MY_TEAM_AUTO, label=auto_label),
+                            *teams,
+                        ],
+                        mode=SelectSelectorMode.DROPDOWN,
+                    )
+                ),
+                vol.Required(
+                    CONF_LIVE_INTERVAL,
+                    default=options.get(CONF_LIVE_INTERVAL, DEFAULT_LIVE_INTERVAL),
+                ): _minutes(1, 15),
+                vol.Required(
+                    CONF_NORMAL_INTERVAL,
+                    default=options.get(CONF_NORMAL_INTERVAL, DEFAULT_NORMAL_INTERVAL),
+                ): _minutes(5, 120),
+            }
+        )
+        return self.async_show_form(step_id="init", data_schema=schema)

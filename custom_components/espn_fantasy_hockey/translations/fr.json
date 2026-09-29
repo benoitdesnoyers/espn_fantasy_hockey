@@ -1,0 +1,104 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ligue ESPN Fantasy Hockey",
+        "description": "Le numéro de ligue se trouve dans l'adresse de votre ligue (leagueId=...). La saison est l'année où la saison de la LNH se termine (2026-27 = 2027). Les ligues privées demandent aussi les témoins espn_s2 et SWID d'une session de navigateur connectée.",
+        "data": {
+          "league_id": "Numéro de ligue",
+          "season": "Saison",
+          "espn_s2": "Témoin espn_s2",
+          "swid": "Témoin SWID"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Mettre à jour les témoins ESPN",
+        "description": "ESPN a refusé les témoins enregistrés. Collez de nouvelles valeurs espn_s2 et SWID provenant de votre navigateur.",
+        "data": {
+          "espn_s2": "Témoin espn_s2",
+          "swid": "Témoin SWID"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre ESPN.",
+      "invalid_auth": "Cette ligue est privée. Fournissez des témoins espn_s2 et SWID valides.",
+      "league_not_found": "Aucune ligue trouvée avec ce numéro pour cette saison.",
+      "unknown": "Erreur inattendue."
+    },
+    "abort": {
+      "already_configured": "Cette ligue et cette saison sont déjà configurées.",
+      "reauth_successful": "Témoins mis à jour."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options ESPN Fantasy Hockey",
+        "data": {
+          "my_team": "Mon équipe",
+          "live_interval": "Intervalle de mise à jour pendant les matchs",
+          "normal_interval": "Intervalle de mise à jour les jours de match"
+        },
+        "data_description": {
+          "my_team": "Utilisée pour les alertes d'alignement et par défaut dans les cartes du tableau de bord. En mode automatique, c'est l'équipe du compte ESPN dont vous avez fourni les témoins.",
+          "live_interval": "Fréquence de mise à jour pendant les matchs de la LNH.",
+          "normal_interval": "Fréquence de mise à jour les jours de match, en dehors des matchs. Sans match dans la prochaine journée, la mise à jour se fait aux heures."
+        }
+      }
+    }
+  },
+  "entity": {
+    "event": {
+      "transactions": {
+        "name": "Transactions",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "free_agent": "Joueur autonome",
+              "trade": "Échange",
+              "waiver": "Réclamation au ballottage"
+            }
+          }
+        }
+      }
+    },
+    "sensor": {
+      "matchup_period": {
+        "name": "Période d'affrontement"
+      },
+      "latest_transaction": {
+        "name": "Dernière transaction"
+      },
+      "lineup_issues": {
+        "name": "Problèmes d'alignement"
+      },
+      "team_standing": {
+        "name": "Classement de {team}"
+      },
+      "team_matchup": {
+        "name": "Affrontement de {team}"
+      },
+      "team_roster": {
+        "name": "Effectif de {team}"
+      }
+    }
+  },
+  "issues": {
+    "new_season": {
+      "title": "{league} : la saison {season} est disponible",
+      "fix_flow": {
+        "step": {
+          "confirm": {
+            "title": "Passer à la saison {season}",
+            "description": "ESPN a renouvelé cette ligue. Passer l'intégration à la saison {season}? Les entités et les tableaux de bord restent les mêmes; ils affichent ensuite les données de la nouvelle saison."
+          }
+        },
+        "abort": {
+          "already_configured": "La saison {season} de cette ligue est déjà configurée séparément. Retirez l'une des deux.",
+          "entry_removed": "Cette ligue n'est plus configurée."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6774 @@
+{
+ "id": 12345,
+ "seasonId": 2026,
+ "scoringPeriodId": 1,
+ "status": {
+  "currentMatchupPeriod": 1,
+  "firstScoringPeriod": 1,
+  "finalScoringPeriod": 194,
+  "isActive": true
+ },
+ "settings": {
+  "name": "Test League",
+  "rosterSettings": {
+   "lineupSlotCounts": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 9,
+    "4": 5,
+    "5": 2,
+    "6": 1,
+    "7": 6,
+    "8": 1,
+    "9": 0
+   }
+  },
+  "scoringSettings": {
+   "scoringType": "H2H_POINTS",
+   "scoringItems": [
+    {
+     "statId": 4,
+     "points": -2.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 2,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 3,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 15,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 16,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 18,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 19,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 20,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 21,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 23,
+     "points": 0.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 29,
+     "points": 0.1,
+     "isReverseItem": false
+    },
+    {
+     "statId": 31,
+     "points": 0.1,
+     "isReverseItem": false
+    },
+    {
+     "statId": 6,
+     "points": 0.2,
+     "isReverseItem": false
+    },
+    {
+     "statId": 32,
+     "points": 0.5,
+     "isReverseItem": false
+    },
+    {
+     "statId": 38,
+     "points": 0.5,
+     "isReverseItem": false
+    },
+    {
+     "statId": 39,
+     "points": 0.5,
+     "isReverseItem": false
+    },
+    {
+     "statId": 9,
+     "points": 1.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 14,
+     "points": 1.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 13,
+     "points": 2.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 7,
+     "points": 3.0,
+     "isReverseItem": false
+    },
+    {
+     "statId": 1,
+     "points": 4.0,
+     "isReverseItem": false
+    }
+   ]
+  }
+ },
+ "members": [
+  {
+   "id": "{00000001-0000-4000-8000-000000000001}",
+   "displayName": "ESPNfan0000000000",
+   "firstName": "Owner",
+   "lastName": "1"
+  },
+  {
+   "id": "{00000002-0000-4000-8000-000000000002}",
+   "displayName": "ESPNfan0000000001",
+   "firstName": "Owner",
+   "lastName": "2"
+  },
+  {
+   "id": "{00000003-0000-4000-8000-000000000003}",
+   "displayName": "ESPNfan0000000002",
+   "firstName": "Owner",
+   "lastName": "3"
+  },
+  {
+   "id": "{00000004-0000-4000-8000-000000000004}",
+   "displayName": "ESPNfan0000000003",
+   "firstName": "Owner",
+   "lastName": "4"
+  }
+ ],
+ "teams": [
+  {
+   "id": 3,
+   "abbrev": "T3",
+   "name": "Top Shelf",
+   "logo": "https://g.espncdn.com/lm-static/logo-packs/fhl/AtTheArena-RobbHarskamp/Hockey_At_The_Arena-06.svg",
+   "owners": [
+    "{00000001-0000-4000-8000-000000000001}"
+   ],
+   "playoffSeed": 3,
+   "rankCalculatedFinal": 0,
+   "record": {
+    "overall": {
+     "wins": 7,
+     "losses": 5,
+     "ties": 0,
+     "pointsFor": 780.5,
+     "pointsAgainst": 830.25,
+     "gamesBack": 2.0,
+     "streakType": "WIN",
+     "streakLength": 3
+    }
+   },
+   "roster": {
+    "entries": [
+     {
+      "playerId": 4565233,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4565233,
+        "fullName": "Matt Boldy",
+        "defaultPositionId": 2,
+        "proTeamId": 30,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 204.4,
+          "stats": {
+           "13": 42.0,
+           "14": 43.0,
+           "15": 18.0,
+           "16": 85.0,
+           "17": 30.0,
+           "18": 11.0,
+           "19": 19.0,
+           "20": 4.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 55.0,
+           "24": 69.0,
+           "25": 1556.0,
+           "26": 93795.0,
+           "27": 1234.14473684,
+           "28": 1.0,
+           "29": 254.0,
+           "30": 76.0,
+           "31": 60.0,
+           "32": 58.0,
+           "34": 76.0,
+           "35": 15.0,
+           "36": 19.0,
+           "37": 34.0,
+           "38": 30.0,
+           "39": 4.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 162.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5080230,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5080230,
+        "fullName": "Lane Hutson",
+        "defaultPositionId": 4,
+        "proTeamId": 10,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 184.0,
+          "stats": {
+           "13": 12.0,
+           "14": 66.0,
+           "15": 36.0,
+           "16": 78.0,
+           "17": 34.0,
+           "18": 2.0,
+           "19": 18.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2010.0,
+           "26": 116959.0,
+           "27": 1426.32926829,
+           "29": 124.0,
+           "30": 82.0,
+           "31": 31.0,
+           "32": 137.0,
+           "33": 78.0,
+           "34": 82.0,
+           "35": 2.0,
+           "36": 18.0,
+           "37": 20.0,
+           "38": 20.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 157.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4874740,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4874740,
+        "fullName": "Wyatt Johnston",
+        "defaultPositionId": 1,
+        "proTeamId": 9,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 205.7,
+          "stats": {
+           "13": 45.0,
+           "14": 41.0,
+           "15": -5.0,
+           "16": 86.0,
+           "17": 32.0,
+           "18": 27.0,
+           "19": 15.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 4.0,
+           "23": 402.0,
+           "24": 442.0,
+           "25": 1806.0,
+           "26": 99007.0,
+           "27": 1207.40243902,
+           "28": 1.0,
+           "29": 206.0,
+           "30": 82.0,
+           "31": 56.0,
+           "32": 55.0,
+           "34": 82.0,
+           "35": 27.0,
+           "36": 15.0,
+           "37": 42.0,
+           "38": 42.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 165.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4024854,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4024854,
+        "fullName": "Matthew Tkachuk",
+        "defaultPositionId": 3,
+        "proTeamId": 26,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 68.7,
+          "stats": {
+           "13": 13.0,
+           "14": 21.0,
+           "15": -6.0,
+           "16": 34.0,
+           "17": 48.0,
+           "18": 4.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 4.0,
+           "24": 8.0,
+           "25": 647.0,
+           "26": 34043.0,
+           "27": 1098.16129032,
+           "28": 1.0,
+           "29": 88.0,
+           "30": 31.0,
+           "31": 29.0,
+           "32": 7.0,
+           "34": 31.0,
+           "35": 4.0,
+           "36": 9.0,
+           "37": 13.0,
+           "38": 13.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 132.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3042269,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3042269,
+        "fullName": "MacKenzie Weegar",
+        "defaultPositionId": 4,
+        "proTeamId": 129764,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 155.1,
+          "stats": {
+           "13": 4.0,
+           "14": 24.0,
+           "15": -33.0,
+           "16": 28.0,
+           "17": 88.0,
+           "18": 0.0,
+           "19": 6.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2432.0,
+           "26": 106471.0,
+           "27": 1347.73417722,
+           "29": 154.0,
+           "30": 79.0,
+           "31": 167.0,
+           "32": 175.0,
+           "33": 28.0,
+           "34": 79.0,
+           "35": 0.0,
+           "36": 7.0,
+           "37": 7.0,
+           "38": 6.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 207.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4874723,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4874723,
+        "fullName": "Dylan Guenther",
+        "defaultPositionId": 3,
+        "proTeamId": 129764,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 169.8,
+          "stats": {
+           "13": 40.0,
+           "14": 33.0,
+           "15": 7.0,
+           "16": 73.0,
+           "17": 28.0,
+           "18": 9.0,
+           "19": 15.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 6.0,
+           "23": 26.0,
+           "24": 37.0,
+           "25": 1691.0,
+           "26": 82459.0,
+           "27": 1043.78481013,
+           "28": 1.0,
+           "29": 242.0,
+           "30": 79.0,
+           "31": 66.0,
+           "32": 28.0,
+           "34": 79.0,
+           "35": 9.0,
+           "36": 15.0,
+           "37": 24.0,
+           "38": 24.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 168.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4065019,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4065019,
+        "fullName": "Brandon Hagel",
+        "defaultPositionId": 2,
+        "proTeamId": 20,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 161.1,
+          "stats": {
+           "13": 36.0,
+           "14": 38.0,
+           "15": 34.0,
+           "16": 74.0,
+           "17": 58.0,
+           "18": 5.0,
+           "19": 7.0,
+           "20": 1.0,
+           "21": 0.0,
+           "22": 6.0,
+           "23": 26.0,
+           "24": 37.0,
+           "25": 1638.0,
+           "26": 84178.0,
+           "27": 1185.6056338,
+           "29": 214.0,
+           "30": 71.0,
+           "31": 42.0,
+           "32": 38.0,
+           "34": 71.0,
+           "35": 6.0,
+           "36": 7.0,
+           "37": 13.0,
+           "38": 12.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 178.2
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2563036,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2563036,
+        "fullName": "Vincent Trocheck",
+        "defaultPositionId": 1,
+        "proTeamId": 129764,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 133.2,
+          "stats": {
+           "13": 16.0,
+           "14": 37.0,
+           "15": -16.0,
+           "16": 53.0,
+           "17": 64.0,
+           "18": 2.0,
+           "19": 14.0,
+           "20": 2.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 625.0,
+           "24": 474.0,
+           "25": 1611.0,
+           "26": 82616.0,
+           "27": 1233.07462687,
+           "29": 114.0,
+           "30": 67.0,
+           "31": 193.0,
+           "32": 49.0,
+           "34": 67.0,
+           "35": 4.0,
+           "36": 14.0,
+           "37": 18.0,
+           "38": 16.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 184.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4697397,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4697397,
+        "fullName": "Dylan Holloway",
+        "defaultPositionId": 2,
+        "proTeamId": 19,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 126.6,
+          "stats": {
+           "13": 22.0,
+           "14": 29.0,
+           "15": 13.0,
+           "16": 51.0,
+           "17": 20.0,
+           "18": 4.0,
+           "19": 4.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 31.0,
+           "24": 33.0,
+           "25": 1293.0,
+           "26": 64619.0,
+           "27": 1095.23728814,
+           "28": 1.0,
+           "29": 162.0,
+           "30": 59.0,
+           "31": 129.0,
+           "32": 41.0,
+           "34": 59.0,
+           "35": 4.0,
+           "36": 4.0,
+           "37": 8.0,
+           "38": 8.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 175.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4392072,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4392072,
+        "fullName": "Owen Tippett",
+        "defaultPositionId": 3,
+        "proTeamId": 15,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 147.6,
+          "stats": {
+           "13": 28.0,
+           "14": 23.0,
+           "15": -6.0,
+           "16": 51.0,
+           "17": 32.0,
+           "18": 3.0,
+           "19": 4.0,
+           "20": 3.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 9.0,
+           "24": 21.0,
+           "25": 1763.0,
+           "26": 81857.0,
+           "27": 1010.58024691,
+           "28": 2.0,
+           "29": 220.0,
+           "30": 81.0,
+           "31": 166.0,
+           "32": 50.0,
+           "34": 81.0,
+           "35": 6.0,
+           "36": 4.0,
+           "37": 10.0,
+           "38": 7.0,
+           "39": 3.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 139.5
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114770,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114770,
+        "fullName": "Nick Schmaltz",
+        "defaultPositionId": 1,
+        "proTeamId": 129764,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 166.8,
+          "stats": {
+           "13": 33.0,
+           "14": 41.0,
+           "15": 17.0,
+           "16": 74.0,
+           "17": 28.0,
+           "18": 11.0,
+           "19": 9.0,
+           "20": 2.0,
+           "21": 0.0,
+           "22": 9.0,
+           "23": 448.0,
+           "24": 526.0,
+           "25": 1991.0,
+           "26": 97039.0,
+           "27": 1183.40243902,
+           "28": 2.0,
+           "29": 205.0,
+           "30": 82.0,
+           "31": 23.0,
+           "32": 52.0,
+           "34": 82.0,
+           "35": 13.0,
+           "36": 9.0,
+           "37": 22.0,
+           "38": 20.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 131.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4268466,
+      "lineupSlotId": 6,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4268466,
+        "fullName": "Morgan Geekie",
+        "defaultPositionId": 3,
+        "proTeamId": 1,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 165.1,
+          "stats": {
+           "13": 39.0,
+           "14": 29.0,
+           "15": -5.0,
+           "16": 68.0,
+           "17": 22.0,
+           "18": 12.0,
+           "19": 12.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 6.0,
+           "23": 73.0,
+           "24": 87.0,
+           "25": 1533.0,
+           "26": 84592.0,
+           "27": 1044.34567901,
+           "28": 1.0,
+           "29": 181.0,
+           "30": 81.0,
+           "31": 110.0,
+           "32": 34.0,
+           "34": 81.0,
+           "35": 12.0,
+           "36": 12.0,
+           "37": 24.0,
+           "38": 24.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 134.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3904177,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3904177,
+        "fullName": "Mackenzie Blackwood",
+        "defaultPositionId": 5,
+        "proTeamId": 17,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 91.6,
+          "stats": {
+           "0": 36.0,
+           "1": 23.0,
+           "2": 10.0,
+           "3": 933.0,
+           "4": 90.0,
+           "6": 843.0,
+           "7": 3.0,
+           "8": 129341.0,
+           "9": 2.0,
+           "10": 2.50500615,
+           "11": 0.90353698,
+           "12": 0.65714286,
+           "30": 39.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 123.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4565239,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4565239,
+        "fullName": "Thomas Harley",
+        "defaultPositionId": 4,
+        "proTeamId": 9,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 134.7,
+          "stats": {
+           "13": 6.0,
+           "14": 30.0,
+           "15": 3.0,
+           "16": 36.0,
+           "17": 26.0,
+           "18": 1.0,
+           "19": 6.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 4.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1748.0,
+           "26": 96837.0,
+           "27": 1383.38571429,
+           "29": 113.0,
+           "30": 70.0,
+           "31": 39.0,
+           "32": 148.0,
+           "33": 36.0,
+           "34": 70.0,
+           "35": 1.0,
+           "36": 6.0,
+           "37": 7.0,
+           "38": 7.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 150.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4874737,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4874737,
+        "fullName": "Jesper Wallstedt",
+        "defaultPositionId": 5,
+        "proTeamId": 30,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 102.8,
+          "stats": {
+           "0": 33.0,
+           "1": 18.0,
+           "2": 9.0,
+           "3": 1020.0,
+           "4": 87.0,
+           "6": 934.0,
+           "7": 4.0,
+           "8": 119799.0,
+           "9": 6.0,
+           "10": 2.61437908,
+           "11": 0.91568627,
+           "12": 0.54545455,
+           "30": 35.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2562629,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2562629,
+        "fullName": "Rickard Rakell",
+        "defaultPositionId": 3,
+        "proTeamId": 16,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 126.2,
+          "stats": {
+           "13": 24.0,
+           "14": 24.0,
+           "15": -2.0,
+           "16": 48.0,
+           "17": 8.0,
+           "18": 7.0,
+           "19": 9.0,
+           "20": 1.0,
+           "21": 1.0,
+           "22": 1.0,
+           "23": 81.0,
+           "24": 144.0,
+           "25": 1295.0,
+           "26": 68215.0,
+           "27": 1136.91666667,
+           "29": 166.0,
+           "30": 60.0,
+           "31": 71.0,
+           "32": 43.0,
+           "34": 60.0,
+           "35": 8.0,
+           "36": 10.0,
+           "37": 18.0,
+           "38": 16.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 165.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114757,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114757,
+        "fullName": "Travis Sanheim",
+        "defaultPositionId": 4,
+        "proTeamId": 15,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 141.1,
+          "stats": {
+           "13": 11.0,
+           "14": 26.0,
+           "15": 12.0,
+           "16": 37.0,
+           "17": 20.0,
+           "18": 1.0,
+           "19": 2.0,
+           "20": 1.0,
+           "21": 2.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2414.0,
+           "26": 117722.0,
+           "27": 1453.35802469,
+           "29": 95.0,
+           "30": 81.0,
+           "31": 46.0,
+           "32": 152.0,
+           "33": 37.0,
+           "34": 81.0,
+           "35": 2.0,
+           "36": 4.0,
+           "37": 6.0,
+           "38": 3.0,
+           "39": 3.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 138.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4378656,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4378656,
+        "fullName": "Mattias Samuelsson",
+        "defaultPositionId": 4,
+        "proTeamId": 2,
+        "injuryStatus": "INJURY_RESERVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 156.6,
+          "stats": {
+           "13": 13.0,
+           "14": 28.0,
+           "15": 41.0,
+           "16": 41.0,
+           "17": 28.0,
+           "18": 0.0,
+           "19": 0.0,
+           "20": 1.0,
+           "21": 2.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2059.0,
+           "26": 106840.0,
+           "27": 1369.74358974,
+           "29": 109.0,
+           "30": 78.0,
+           "31": 132.0,
+           "32": 154.0,
+           "33": 41.0,
+           "34": 78.0,
+           "35": 1.0,
+           "36": 2.0,
+           "37": 3.0,
+           "38": 0.0,
+           "39": 3.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2558631,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2558631,
+        "fullName": "Mattias Ekholm",
+        "defaultPositionId": 4,
+        "proTeamId": 6,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 130.6,
+          "stats": {
+           "13": 6.0,
+           "14": 35.0,
+           "15": 32.0,
+           "16": 41.0,
+           "17": 30.0,
+           "18": 0.0,
+           "19": 3.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2040.0,
+           "26": 101216.0,
+           "27": 1234.34146341,
+           "28": 1.0,
+           "29": 131.0,
+           "30": 82.0,
+           "31": 65.0,
+           "32": 125.0,
+           "33": 41.0,
+           "34": 82.0,
+           "35": 0.0,
+           "36": 3.0,
+           "37": 3.0,
+           "38": 3.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 121.2
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3899939,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3899939,
+        "fullName": "Ivan Provorov",
+        "defaultPositionId": 4,
+        "proTeamId": 29,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 128.1,
+          "stats": {
+           "13": 9.0,
+           "14": 22.0,
+           "15": 14.0,
+           "16": 31.0,
+           "17": 32.0,
+           "18": 1.0,
+           "19": 4.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2124.0,
+           "26": 122087.0,
+           "27": 1488.86585366,
+           "29": 158.0,
+           "30": 82.0,
+           "31": 28.0,
+           "32": 134.0,
+           "33": 31.0,
+           "34": 82.0,
+           "35": 1.0,
+           "36": 4.0,
+           "37": 5.0,
+           "38": 5.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 134.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3042017,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3042017,
+        "fullName": "Alexander Wennberg",
+        "defaultPositionId": 1,
+        "proTeamId": 18,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 139.6,
+          "stats": {
+           "13": 18.0,
+           "14": 37.0,
+           "15": -25.0,
+           "16": 55.0,
+           "17": 18.0,
+           "18": 8.0,
+           "19": 7.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 3.0,
+           "23": 656.0,
+           "24": 744.0,
+           "25": 1850.0,
+           "26": 98189.0,
+           "27": 1227.3625,
+           "29": 93.0,
+           "30": 80.0,
+           "31": 28.0,
+           "32": 93.0,
+           "34": 80.0,
+           "35": 8.0,
+           "36": 8.0,
+           "37": 16.0,
+           "38": 15.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 98.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4697391,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4697391,
+        "fullName": "Marco Rossi",
+        "defaultPositionId": 1,
+        "proTeamId": 22,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 79.8,
+          "stats": {
+           "13": 12.0,
+           "14": 23.0,
+           "15": -26.0,
+           "16": 35.0,
+           "17": 10.0,
+           "18": 3.0,
+           "19": 11.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 283.0,
+           "24": 292.0,
+           "25": 988.0,
+           "26": 52425.0,
+           "27": 1048.5,
+           "29": 66.0,
+           "30": 50.0,
+           "31": 47.0,
+           "32": 29.0,
+           "34": 50.0,
+           "35": 3.0,
+           "36": 11.0,
+           "37": 14.0,
+           "38": 14.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 146.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5571,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5571,
+        "fullName": "Sergei Bobrovsky",
+        "defaultPositionId": 5,
+        "proTeamId": 21,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 32.2,
+          "stats": {
+           "0": 51.0,
+           "1": 27.0,
+           "2": 23.0,
+           "3": 1250.0,
+           "4": 154.0,
+           "6": 1096.0,
+           "7": 4.0,
+           "8": 180579.0,
+           "9": 1.0,
+           "10": 3.07012443,
+           "11": 0.8768,
+           "12": 0.52941176,
+           "30": 52.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 166.2
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "abbrev": "T4",
+   "name": "Five Hole Heroes",
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/00000004-aaaa-bbbb-cccc-000000000000",
+   "owners": [
+    "{00000002-0000-4000-8000-000000000002}"
+   ],
+   "playoffSeed": 4,
+   "rankCalculatedFinal": 0,
+   "record": {
+    "overall": {
+     "wins": 6,
+     "losses": 6,
+     "ties": 0,
+     "pointsFor": 740.5,
+     "pointsAgainst": 840.25,
+     "gamesBack": 3.0,
+     "streakType": "LOSS",
+     "streakLength": 4
+    }
+   },
+   "roster": {
+    "entries": [
+     {
+      "playerId": 5206628,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5206628,
+        "fullName": "Macklin Celebrini",
+        "defaultPositionId": 1,
+        "proTeamId": 18,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 237.0,
+          "stats": {
+           "13": 45.0,
+           "14": 70.0,
+           "15": 8.0,
+           "16": 115.0,
+           "17": 44.0,
+           "18": 8.0,
+           "19": 25.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 5.0,
+           "23": 625.0,
+           "24": 660.0,
+           "25": 1741.0,
+           "26": 104874.0,
+           "27": 1278.95121951,
+           "28": 2.0,
+           "29": 287.0,
+           "30": 82.0,
+           "31": 53.0,
+           "32": 53.0,
+           "34": 82.0,
+           "35": 8.0,
+           "36": 25.0,
+           "37": 33.0,
+           "38": 33.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 188.3
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4233594,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4233594,
+        "fullName": "Nick Suzuki",
+        "defaultPositionId": 1,
+        "proTeamId": 10,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 207.5,
+          "stats": {
+           "13": 29.0,
+           "14": 72.0,
+           "15": 37.0,
+           "16": 101.0,
+           "17": 28.0,
+           "18": 11.0,
+           "19": 32.0,
+           "20": 1.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 731.0,
+           "24": 718.0,
+           "25": 1812.0,
+           "26": 102437.0,
+           "27": 1249.23170732,
+           "29": 183.0,
+           "30": 82.0,
+           "31": 62.0,
+           "32": 62.0,
+           "34": 82.0,
+           "35": 12.0,
+           "36": 32.0,
+           "37": 44.0,
+           "38": 43.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 181.3
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4565227,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4565227,
+        "fullName": "Moritz Seider",
+        "defaultPositionId": 4,
+        "proTeamId": 5,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 205.5,
+          "stats": {
+           "13": 10.0,
+           "14": 50.0,
+           "15": 15.0,
+           "16": 60.0,
+           "17": 57.0,
+           "18": 3.0,
+           "19": 25.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2346.0,
+           "26": 126279.0,
+           "27": 1539.98780488,
+           "29": 187.0,
+           "30": 82.0,
+           "31": 128.0,
+           "32": 180.0,
+           "33": 60.0,
+           "34": 82.0,
+           "35": 3.0,
+           "36": 25.0,
+           "37": 28.0,
+           "38": 28.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 193.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114736,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114736,
+        "fullName": "William Nylander",
+        "defaultPositionId": 3,
+        "proTeamId": 21,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 149.9,
+          "stats": {
+           "13": 30.0,
+           "14": 49.0,
+           "15": -14.0,
+           "16": 79.0,
+           "17": 16.0,
+           "18": 7.0,
+           "19": 15.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 4.0,
+           "23": 31.0,
+           "24": 50.0,
+           "25": 1451.0,
+           "26": 75721.0,
+           "27": 1164.93846154,
+           "29": 156.0,
+           "30": 65.0,
+           "31": 13.0,
+           "32": 26.0,
+           "34": 65.0,
+           "35": 7.0,
+           "36": 15.0,
+           "37": 22.0,
+           "38": 22.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 190.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4915349,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4915349,
+        "fullName": "Juraj Slafkovsky",
+        "defaultPositionId": 2,
+        "proTeamId": 10,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 184.5,
+          "stats": {
+           "13": 30.0,
+           "14": 43.0,
+           "15": 9.0,
+           "16": 73.0,
+           "17": 52.0,
+           "18": 15.0,
+           "19": 13.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 4.0,
+           "23": 20.0,
+           "24": 41.0,
+           "25": 1653.0,
+           "26": 91204.0,
+           "27": 1112.24390244,
+           "29": 180.0,
+           "30": 82.0,
+           "31": 105.0,
+           "32": 78.0,
+           "34": 82.0,
+           "35": 15.0,
+           "36": 13.0,
+           "37": 28.0,
+           "38": 28.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 142.2
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5080145,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5080145,
+        "fullName": "Cutter Gauthier",
+        "defaultPositionId": 2,
+        "proTeamId": 25,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 164.4,
+          "stats": {
+           "13": 41.0,
+           "14": 28.0,
+           "15": -2.0,
+           "16": 69.0,
+           "17": 28.0,
+           "18": 11.0,
+           "19": 8.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 7.0,
+           "23": 102.0,
+           "24": 106.0,
+           "25": 1586.0,
+           "26": 78673.0,
+           "27": 1035.17105263,
+           "28": 1.0,
+           "29": 285.0,
+           "30": 76.0,
+           "31": 64.0,
+           "32": 20.0,
+           "34": 76.0,
+           "35": 11.0,
+           "36": 8.0,
+           "37": 19.0,
+           "38": 19.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 147.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4565228,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4565228,
+        "fullName": "Dylan Cozens",
+        "defaultPositionId": 1,
+        "proTeamId": 14,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 155.5,
+          "stats": {
+           "13": 28.0,
+           "14": 31.0,
+           "15": -7.0,
+           "16": 59.0,
+           "17": 59.0,
+           "18": 13.0,
+           "19": 16.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 435.0,
+           "24": 383.0,
+           "25": 1882.0,
+           "26": 83835.0,
+           "27": 1022.37804878,
+           "29": 205.0,
+           "30": 82.0,
+           "31": 215.0,
+           "32": 24.0,
+           "34": 82.0,
+           "35": 13.0,
+           "36": 16.0,
+           "37": 29.0,
+           "38": 29.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 122.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5798,
+      "lineupSlotId": 6,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5798,
+        "fullName": "Brock Nelson",
+        "defaultPositionId": 1,
+        "proTeamId": 17,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 162.4,
+          "stats": {
+           "13": 33.0,
+           "14": 32.0,
+           "15": 15.0,
+           "16": 65.0,
+           "17": 36.0,
+           "18": 10.0,
+           "19": 8.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 9.0,
+           "23": 735.0,
+           "24": 724.0,
+           "25": 1929.0,
+           "26": 95515.0,
+           "27": 1179.19753086,
+           "28": 1.0,
+           "29": 186.0,
+           "30": 81.0,
+           "31": 38.0,
+           "32": 65.0,
+           "34": 81.0,
+           "35": 10.0,
+           "36": 9.0,
+           "37": 19.0,
+           "38": 18.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 163.5
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4565262,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4565262,
+        "fullName": "Jackson LaCombe",
+        "defaultPositionId": 4,
+        "proTeamId": 25,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 164.6,
+          "stats": {
+           "13": 10.0,
+           "14": 48.0,
+           "15": -2.0,
+           "16": 58.0,
+           "17": 19.0,
+           "18": 3.0,
+           "19": 14.0,
+           "20": 1.0,
+           "21": 1.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2241.0,
+           "26": 119300.0,
+           "27": 1454.87804878,
+           "29": 157.0,
+           "30": 82.0,
+           "31": 74.0,
+           "32": 128.0,
+           "33": 58.0,
+           "34": 82.0,
+           "35": 4.0,
+           "36": 15.0,
+           "37": 19.0,
+           "38": 17.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 175.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2970615,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2970615,
+        "fullName": "Tom Wilson",
+        "defaultPositionId": 3,
+        "proTeamId": 23,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 157.7,
+          "stats": {
+           "13": 30.0,
+           "14": 32.0,
+           "15": 15.0,
+           "16": 62.0,
+           "17": 117.0,
+           "18": 7.0,
+           "19": 5.0,
+           "20": 1.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 17.0,
+           "24": 21.0,
+           "25": 1669.0,
+           "26": 84079.0,
+           "27": 1167.76388889,
+           "29": 153.0,
+           "30": 72.0,
+           "31": 179.0,
+           "32": 52.0,
+           "34": 72.0,
+           "35": 8.0,
+           "36": 5.0,
+           "37": 13.0,
+           "38": 12.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 159.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3988803,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3988803,
+        "fullName": "Charlie McAvoy",
+        "defaultPositionId": 4,
+        "proTeamId": 1,
+        "injuryStatus": "SUSPENSION",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 167.0,
+          "stats": {
+           "13": 11.0,
+           "14": 50.0,
+           "15": 13.0,
+           "16": 61.0,
+           "17": 62.0,
+           "18": 2.0,
+           "19": 21.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1872.0,
+           "26": 100973.0,
+           "27": 1463.37681159,
+           "29": 111.0,
+           "30": 69.0,
+           "31": 79.0,
+           "32": 129.0,
+           "33": 61.0,
+           "34": 69.0,
+           "35": 2.0,
+           "36": 21.0,
+           "37": 23.0,
+           "38": 23.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 159.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5136617,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5136617,
+        "fullName": "Adam Fantilli",
+        "defaultPositionId": 1,
+        "proTeamId": 29,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 150.3,
+          "stats": {
+           "13": 24.0,
+           "14": 35.0,
+           "15": -13.0,
+           "16": 59.0,
+           "17": 38.0,
+           "18": 4.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 552.0,
+           "24": 556.0,
+           "25": 1661.0,
+           "26": 93000.0,
+           "27": 1134.14634146,
+           "29": 214.0,
+           "30": 82.0,
+           "31": 139.0,
+           "32": 51.0,
+           "34": 82.0,
+           "35": 4.0,
+           "36": 9.0,
+           "37": 13.0,
+           "38": 13.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 176.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5216918,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5216918,
+        "fullName": "Cole Hutson",
+        "defaultPositionId": 4,
+        "proTeamId": 23,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 22.8,
+          "stats": {
+           "13": 3.0,
+           "14": 7.0,
+           "15": -3.0,
+           "16": 10.0,
+           "17": 8.0,
+           "18": 1.0,
+           "19": 5.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 285.0,
+           "26": 14664.0,
+           "27": 1047.42857143,
+           "29": 22.0,
+           "30": 14.0,
+           "31": 16.0,
+           "32": 6.0,
+           "33": 10.0,
+           "34": 14.0,
+           "35": 1.0,
+           "36": 5.0,
+           "37": 6.0,
+           "38": 6.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5291935,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5291935,
+        "fullName": "Anton Frondell",
+        "defaultPositionId": 1,
+        "proTeamId": 4,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 23.9,
+          "stats": {
+           "13": 3.0,
+           "14": 6.0,
+           "15": -1.0,
+           "16": 9.0,
+           "17": 4.0,
+           "18": 0.0,
+           "19": 2.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 0.0,
+           "23": 32.0,
+           "24": 74.0,
+           "25": 237.0,
+           "26": 12739.0,
+           "27": 1061.58333333,
+           "29": 36.0,
+           "30": 12.0,
+           "31": 8.0,
+           "32": 13.0,
+           "34": 12.0,
+           "35": 0.0,
+           "36": 2.0,
+           "37": 2.0,
+           "38": 2.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3069352,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3069352,
+        "fullName": "Esa Lindell",
+        "defaultPositionId": 4,
+        "proTeamId": 9,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 140.9,
+          "stats": {
+           "13": 6.0,
+           "14": 26.0,
+           "15": 30.0,
+           "16": 32.0,
+           "17": 20.0,
+           "18": 1.0,
+           "19": 1.0,
+           "20": 0.0,
+           "21": 2.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1958.0,
+           "26": 114315.0,
+           "27": 1394.08536585,
+           "29": 83.0,
+           "30": 82.0,
+           "31": 31.0,
+           "32": 179.0,
+           "33": 32.0,
+           "34": 82.0,
+           "35": 1.0,
+           "36": 3.0,
+           "37": 4.0,
+           "38": 2.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 132.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4697468,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4697468,
+        "fullName": "Will Cuylle",
+        "defaultPositionId": 2,
+        "proTeamId": 13,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 141.9,
+          "stats": {
+           "13": 20.0,
+           "14": 18.0,
+           "15": -12.0,
+           "16": 38.0,
+           "17": 65.0,
+           "18": 4.0,
+           "19": 4.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 42.0,
+           "24": 45.0,
+           "25": 1866.0,
+           "26": 82937.0,
+           "27": 1011.42682927,
+           "28": 1.0,
+           "29": 157.0,
+           "30": 82.0,
+           "31": 302.0,
+           "32": 68.0,
+           "34": 82.0,
+           "35": 4.0,
+           "36": 4.0,
+           "37": 8.0,
+           "38": 8.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 153.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3036851,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3036851,
+        "fullName": "Anton Forsberg",
+        "defaultPositionId": 5,
+        "proTeamId": 8,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 77.2,
+          "stats": {
+           "0": 31.0,
+           "1": 16.0,
+           "2": 12.0,
+           "3": 952.0,
+           "4": 87.0,
+           "6": 866.0,
+           "7": 3.0,
+           "8": 121926.0,
+           "9": 5.0,
+           "10": 2.56877122,
+           "11": 0.90966387,
+           "12": 0.48484848,
+           "30": 36.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3042037,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3042037,
+        "fullName": "Anthony Mantha",
+        "defaultPositionId": 3,
+        "proTeamId": 11,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 143.9,
+          "stats": {
+           "13": 33.0,
+           "14": 31.0,
+           "15": 10.0,
+           "16": 64.0,
+           "17": 43.0,
+           "18": 7.0,
+           "19": 6.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 14.0,
+           "24": 32.0,
+           "25": 1431.0,
+           "26": 73810.0,
+           "27": 911.2345679,
+           "29": 152.0,
+           "30": 81.0,
+           "31": 52.0,
+           "32": 40.0,
+           "34": 81.0,
+           "35": 7.0,
+           "36": 6.0,
+           "37": 13.0,
+           "38": 13.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5157,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5157,
+        "fullName": "Victor Hedman",
+        "defaultPositionId": 4,
+        "proTeamId": 20,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 49.9,
+          "stats": {
+           "13": 1.0,
+           "14": 16.0,
+           "15": -1.0,
+           "16": 17.0,
+           "17": 10.0,
+           "18": 0.0,
+           "19": 6.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 762.0,
+           "26": 37357.0,
+           "27": 1132.03030303,
+           "29": 50.0,
+           "30": 33.0,
+           "31": 19.0,
+           "32": 44.0,
+           "33": 17.0,
+           "34": 33.0,
+           "35": 0.0,
+           "36": 6.0,
+           "37": 6.0,
+           "38": 6.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 188.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4272674,
+      "lineupSlotId": 8,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4272674,
+        "fullName": "Filip Gustavsson",
+        "defaultPositionId": 5,
+        "proTeamId": 30,
+        "injuryStatus": "INJURY_RESERVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 113.0,
+          "stats": {
+           "0": 49.0,
+           "1": 28.0,
+           "2": 15.0,
+           "3": 1377.0,
+           "4": 133.0,
+           "6": 1245.0,
+           "7": 4.0,
+           "8": 178075.0,
+           "9": 6.0,
+           "10": 2.68875474,
+           "11": 0.90413943,
+           "12": 0.57142857,
+           "30": 50.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 171.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4697394,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4697394,
+        "fullName": "Yaroslav Askarov",
+        "defaultPositionId": 5,
+        "proTeamId": 18,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 11.0,
+          "stats": {
+           "0": 47.0,
+           "1": 21.0,
+           "2": 20.0,
+           "3": 1341.0,
+           "4": 157.0,
+           "6": 1185.0,
+           "7": 0.0,
+           "8": 155789.0,
+           "9": 4.0,
+           "10": 3.627984,
+           "11": 0.8836689,
+           "12": 0.46666667,
+           "30": 47.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2562624,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2562624,
+        "fullName": "Ryan Nugent-Hopkins",
+        "defaultPositionId": 1,
+        "proTeamId": 6,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 122.3,
+          "stats": {
+           "13": 20.0,
+           "14": 36.0,
+           "15": -9.0,
+           "16": 56.0,
+           "17": 21.0,
+           "18": 11.0,
+           "19": 18.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 2.0,
+           "23": 172.0,
+           "24": 191.0,
+           "25": 1560.0,
+           "26": 82351.0,
+           "27": 1143.76388889,
+           "29": 133.0,
+           "30": 72.0,
+           "31": 25.0,
+           "32": 31.0,
+           "34": 72.0,
+           "35": 11.0,
+           "36": 19.0,
+           "37": 30.0,
+           "38": 29.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 122.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5206642,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5206642,
+        "fullName": "Zeev Buium",
+        "defaultPositionId": 4,
+        "proTeamId": 22,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 76.1,
+          "stats": {
+           "13": 6.0,
+           "14": 20.0,
+           "15": -33.0,
+           "16": 26.0,
+           "17": 41.0,
+           "18": 3.0,
+           "19": 10.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1642.0,
+           "26": 89269.0,
+           "27": 1174.59210526,
+           "29": 73.0,
+           "30": 76.0,
+           "31": 28.0,
+           "32": 55.0,
+           "33": 26.0,
+           "34": 76.0,
+           "35": 3.0,
+           "36": 10.0,
+           "37": 13.0,
+           "38": 13.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5452,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5452,
+        "fullName": "Jacob Markstrom",
+        "defaultPositionId": 5,
+        "proTeamId": 26,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 32.6,
+          "stats": {
+           "0": 43.0,
+           "1": 23.0,
+           "2": 19.0,
+           "3": 1113.0,
+           "4": 130.0,
+           "6": 983.0,
+           "7": 1.0,
+           "8": 152641.0,
+           "9": 1.0,
+           "10": 3.06601765,
+           "11": 0.88319856,
+           "12": 0.53488372,
+           "30": 44.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 94.4
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": 1,
+   "abbrev": "T1",
+   "name": "Ice Wolves",
+   "logo": "https://g.espncdn.com/lm-static/fhl/images/default_logos/19.svg",
+   "owners": [
+    "{00000003-0000-4000-8000-000000000003}"
+   ],
+   "playoffSeed": 1,
+   "rankCalculatedFinal": 0,
+   "record": {
+    "overall": {
+     "wins": 9,
+     "losses": 3,
+     "ties": 0,
+     "pointsFor": 860.5,
+     "pointsAgainst": 810.25,
+     "gamesBack": 0.0,
+     "streakType": "WIN",
+     "streakLength": 1
+    }
+   },
+   "roster": {
+    "entries": [
+     {
+      "playerId": 3114727,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114727,
+        "fullName": "Leon Draisaitl",
+        "defaultPositionId": 1,
+        "proTeamId": 6,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 183.0,
+          "stats": {
+           "13": 35.0,
+           "14": 62.0,
+           "15": 13.0,
+           "16": 97.0,
+           "17": 26.0,
+           "18": 16.0,
+           "19": 26.0,
+           "20": 1.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 628.0,
+           "24": 475.0,
+           "25": 1433.0,
+           "26": 84143.0,
+           "27": 1294.50769231,
+           "28": 1.0,
+           "29": 186.0,
+           "30": 65.0,
+           "31": 34.0,
+           "32": 15.0,
+           "34": 65.0,
+           "35": 17.0,
+           "36": 26.0,
+           "37": 43.0,
+           "38": 42.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 221.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3942335,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3942335,
+        "fullName": "Kirill Kaprizov",
+        "defaultPositionId": 2,
+        "proTeamId": 30,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 195.6,
+          "stats": {
+           "13": 45.0,
+           "14": 44.0,
+           "15": 10.0,
+           "16": 89.0,
+           "17": 28.0,
+           "18": 19.0,
+           "19": 13.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 7.0,
+           "23": 0.0,
+           "24": 2.0,
+           "25": 1628.0,
+           "26": 103647.0,
+           "27": 1328.80769231,
+           "28": 1.0,
+           "29": 269.0,
+           "30": 78.0,
+           "31": 52.0,
+           "32": 27.0,
+           "34": 78.0,
+           "35": 19.0,
+           "36": 13.0,
+           "37": 32.0,
+           "38": 32.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 194.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4697386,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4697386,
+        "fullName": "Jake Sanderson",
+        "defaultPositionId": 4,
+        "proTeamId": 14,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 161.1,
+          "stats": {
+           "13": 14.0,
+           "14": 40.0,
+           "15": 16.0,
+           "16": 54.0,
+           "17": 8.0,
+           "18": 5.0,
+           "19": 17.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2019.0,
+           "26": 99854.0,
+           "27": 1490.35820896,
+           "29": 147.0,
+           "30": 67.0,
+           "31": 29.0,
+           "32": 129.0,
+           "33": 54.0,
+           "34": 67.0,
+           "35": 5.0,
+           "36": 17.0,
+           "37": 22.0,
+           "38": 22.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 165.5
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3648002,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3648002,
+        "fullName": "Jack Eichel",
+        "defaultPositionId": 1,
+        "proTeamId": 37,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 182.0,
+          "stats": {
+           "13": 27.0,
+           "14": 63.0,
+           "15": 23.0,
+           "16": 90.0,
+           "17": 18.0,
+           "18": 1.0,
+           "19": 27.0,
+           "20": 1.0,
+           "21": 2.0,
+           "22": 6.0,
+           "23": 558.0,
+           "24": 613.0,
+           "25": 1673.0,
+           "26": 94132.0,
+           "27": 1272.05405405,
+           "29": 260.0,
+           "30": 74.0,
+           "31": 35.0,
+           "32": 40.0,
+           "34": 74.0,
+           "35": 2.0,
+           "36": 29.0,
+           "37": 31.0,
+           "38": 28.0,
+           "39": 3.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 185.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4197146,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4197146,
+        "fullName": "Adam Fox",
+        "defaultPositionId": 4,
+        "proTeamId": 13,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 123.0,
+          "stats": {
+           "13": 9.0,
+           "14": 44.0,
+           "15": 5.0,
+           "16": 53.0,
+           "17": 20.0,
+           "18": 5.0,
+           "19": 19.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1449.0,
+           "26": 77977.0,
+           "27": 1417.76363636,
+           "29": 91.0,
+           "30": 55.0,
+           "31": 24.0,
+           "32": 74.0,
+           "33": 53.0,
+           "34": 55.0,
+           "35": 5.0,
+           "36": 20.0,
+           "37": 25.0,
+           "38": 24.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 175.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3899938,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3899938,
+        "fullName": "Mikko Rantanen",
+        "defaultPositionId": 3,
+        "proTeamId": 9,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 149.7,
+          "stats": {
+           "13": 22.0,
+           "14": 55.0,
+           "15": 0.0,
+           "16": 77.0,
+           "17": 93.0,
+           "18": 6.0,
+           "19": 28.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 37.0,
+           "24": 47.0,
+           "25": 1356.0,
+           "26": 77475.0,
+           "27": 1210.546875,
+           "29": 139.0,
+           "30": 64.0,
+           "31": 48.0,
+           "32": 30.0,
+           "34": 64.0,
+           "35": 6.0,
+           "36": 28.0,
+           "37": 34.0,
+           "38": 34.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 198.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5149153,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5149153,
+        "fullName": "Leo Carlsson",
+        "defaultPositionId": 1,
+        "proTeamId": 25,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 141.7,
+          "stats": {
+           "13": 29.0,
+           "14": 38.0,
+           "15": 4.0,
+           "16": 67.0,
+           "17": 33.0,
+           "18": 4.0,
+           "19": 14.0,
+           "20": 2.0,
+           "21": 1.0,
+           "22": 3.0,
+           "23": 431.0,
+           "24": 545.0,
+           "25": 1579.0,
+           "26": 80431.0,
+           "27": 1149.01428571,
+           "29": 193.0,
+           "30": 70.0,
+           "31": 14.0,
+           "32": 29.0,
+           "34": 70.0,
+           "35": 6.0,
+           "36": 15.0,
+           "37": 21.0,
+           "38": 18.0,
+           "39": 3.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 122.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3942065,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3942065,
+        "fullName": "Karel Vejmelka",
+        "defaultPositionId": 5,
+        "proTeamId": 129764,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 114.6,
+          "stats": {
+           "0": 63.0,
+           "1": 38.0,
+           "2": 20.0,
+           "3": 1626.0,
+           "4": 169.0,
+           "6": 1458.0,
+           "7": 2.0,
+           "8": 221565.0,
+           "9": 3.0,
+           "10": 2.74592106,
+           "11": 0.89667897,
+           "12": 0.62295082,
+           "30": 64.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 62.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3149843,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3149843,
+        "fullName": "Darren Raddysh",
+        "defaultPositionId": 4,
+        "proTeamId": 21,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 167.4,
+          "stats": {
+           "13": 22.0,
+           "14": 48.0,
+           "15": 21.0,
+           "16": 70.0,
+           "17": 72.0,
+           "18": 10.0,
+           "19": 16.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 6.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1682.0,
+           "26": 99390.0,
+           "27": 1361.50684932,
+           "28": 1.0,
+           "29": 212.0,
+           "30": 73.0,
+           "31": 67.0,
+           "32": 69.0,
+           "33": 70.0,
+           "34": 73.0,
+           "35": 10.0,
+           "36": 16.0,
+           "37": 26.0,
+           "38": 26.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 111.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4352683,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4352683,
+        "fullName": "Andrei Svechnikov",
+        "defaultPositionId": 2,
+        "proTeamId": 7,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 158.6,
+          "stats": {
+           "13": 31.0,
+           "14": 39.0,
+           "15": 1.0,
+           "16": 70.0,
+           "17": 66.0,
+           "18": 12.0,
+           "19": 17.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 10.0,
+           "24": 12.0,
+           "25": 1591.0,
+           "26": 80509.0,
+           "27": 1019.10126582,
+           "28": 1.0,
+           "29": 203.0,
+           "30": 79.0,
+           "31": 148.0,
+           "32": 16.0,
+           "34": 79.0,
+           "35": 12.0,
+           "36": 17.0,
+           "37": 29.0,
+           "38": 29.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 138.2
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3042055,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3042055,
+        "fullName": "Shea Theodore",
+        "defaultPositionId": 4,
+        "proTeamId": 37,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 108.2,
+          "stats": {
+           "13": 10.0,
+           "14": 29.0,
+           "15": 19.0,
+           "16": 39.0,
+           "17": 24.0,
+           "18": 2.0,
+           "19": 3.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1993.0,
+           "26": 95913.0,
+           "27": 1370.18571429,
+           "29": 130.0,
+           "30": 70.0,
+           "31": 2.0,
+           "32": 87.0,
+           "33": 39.0,
+           "34": 70.0,
+           "35": 2.0,
+           "36": 3.0,
+           "37": 5.0,
+           "38": 5.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 121.3
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5291941,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5291941,
+        "fullName": "Porter Martone",
+        "defaultPositionId": 3,
+        "proTeamId": 15,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 21.8,
+          "stats": {
+           "13": 4.0,
+           "14": 6.0,
+           "15": 4.0,
+           "16": 10.0,
+           "17": 6.0,
+           "18": 2.0,
+           "19": 2.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 1.0,
+           "24": 2.0,
+           "25": 190.0,
+           "26": 9202.0,
+           "27": 1022.44444444,
+           "29": 32.0,
+           "30": 9.0,
+           "31": 16.0,
+           "32": 2.0,
+           "34": 9.0,
+           "35": 2.0,
+           "36": 2.0,
+           "37": 4.0,
+           "38": 4.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5080171,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5080171,
+        "fullName": "Jimmy Snuggerud",
+        "defaultPositionId": 3,
+        "proTeamId": 19,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 119.9,
+          "stats": {
+           "13": 21.0,
+           "14": 30.0,
+           "15": 16.0,
+           "16": 51.0,
+           "17": 18.0,
+           "18": 5.0,
+           "19": 4.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 5.0,
+           "23": 4.0,
+           "24": 8.0,
+           "25": 1466.0,
+           "26": 70122.0,
+           "27": 1001.74285714,
+           "29": 169.0,
+           "30": 70.0,
+           "31": 70.0,
+           "32": 39.0,
+           "34": 70.0,
+           "35": 5.0,
+           "36": 4.0,
+           "37": 9.0,
+           "38": 9.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5545,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5545,
+        "fullName": "Mark Stone",
+        "defaultPositionId": 3,
+        "proTeamId": 37,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 155.1,
+          "stats": {
+           "13": 28.0,
+           "14": 45.0,
+           "15": 26.0,
+           "16": 73.0,
+           "17": 9.0,
+           "18": 9.0,
+           "19": 18.0,
+           "20": 1.0,
+           "21": 1.0,
+           "22": 4.0,
+           "23": 4.0,
+           "24": 10.0,
+           "25": 1268.0,
+           "26": 69174.0,
+           "27": 1152.9,
+           "29": 130.0,
+           "30": 60.0,
+           "31": 31.0,
+           "32": 47.0,
+           "34": 60.0,
+           "35": 10.0,
+           "36": 19.0,
+           "37": 29.0,
+           "38": 27.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 120.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3025662,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3025662,
+        "fullName": "Shayne Gostisbehere",
+        "defaultPositionId": 4,
+        "proTeamId": 7,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 118.0,
+          "stats": {
+           "13": 13.0,
+           "14": 37.0,
+           "15": 11.0,
+           "16": 50.0,
+           "17": 22.0,
+           "18": 6.0,
+           "19": 12.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1214.0,
+           "26": 63466.0,
+           "27": 1153.92727273,
+           "29": 116.0,
+           "30": 55.0,
+           "31": 29.0,
+           "32": 63.0,
+           "33": 50.0,
+           "34": 55.0,
+           "35": 6.0,
+           "36": 12.0,
+           "37": 18.0,
+           "38": 18.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 123.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3904091,
+      "lineupSlotId": 6,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3904091,
+        "fullName": "Joel Eriksson Ek",
+        "defaultPositionId": 1,
+        "proTeamId": 30,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 125.0,
+          "stats": {
+           "13": 19.0,
+           "14": 32.0,
+           "15": 16.0,
+           "16": 51.0,
+           "17": 32.0,
+           "18": 7.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 681.0,
+           "24": 709.0,
+           "25": 1427.0,
+           "26": 80132.0,
+           "27": 1144.74285714,
+           "29": 194.0,
+           "30": 70.0,
+           "31": 106.0,
+           "32": 34.0,
+           "34": 70.0,
+           "35": 7.0,
+           "36": 9.0,
+           "37": 16.0,
+           "38": 16.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 157.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2590824,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2590824,
+        "fullName": "John Gibson",
+        "defaultPositionId": 5,
+        "proTeamId": 5,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 107.4,
+          "stats": {
+           "0": 57.0,
+           "1": 29.0,
+           "2": 22.0,
+           "3": 1461.0,
+           "4": 144.0,
+           "6": 1317.0,
+           "7": 4.0,
+           "8": 190874.0,
+           "9": 4.0,
+           "10": 2.71592778,
+           "11": 0.90143737,
+           "12": 0.52727273,
+           "30": 57.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 74.8
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3899979,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3899979,
+        "fullName": "Brock Boeser",
+        "defaultPositionId": 3,
+        "proTeamId": 22,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 115.0,
+          "stats": {
+           "13": 22.0,
+           "14": 26.0,
+           "15": -48.0,
+           "16": 48.0,
+           "17": 8.0,
+           "18": 6.0,
+           "19": 13.0,
+           "20": 1.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 58.0,
+           "24": 78.0,
+           "25": 1611.0,
+           "26": 85740.0,
+           "27": 1143.2,
+           "28": 1.0,
+           "29": 166.0,
+           "30": 75.0,
+           "31": 54.0,
+           "32": 26.0,
+           "34": 75.0,
+           "35": 7.0,
+           "36": 13.0,
+           "37": 20.0,
+           "38": 19.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 135.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3115032,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3115032,
+        "fullName": "Brandon Montour",
+        "defaultPositionId": 4,
+        "proTeamId": 124292,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 111.4,
+          "stats": {
+           "13": 11.0,
+           "14": 21.0,
+           "15": -21.0,
+           "16": 32.0,
+           "17": 45.0,
+           "18": 2.0,
+           "19": 6.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1521.0,
+           "26": 86629.0,
+           "27": 1353.578125,
+           "29": 174.0,
+           "30": 64.0,
+           "31": 75.0,
+           "32": 79.0,
+           "33": 32.0,
+           "34": 64.0,
+           "35": 2.0,
+           "36": 6.0,
+           "37": 8.0,
+           "38": 8.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 143.3
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4894366,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4894366,
+        "fullName": "Jet Greaves",
+        "defaultPositionId": 5,
+        "proTeamId": 29,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 114.4,
+          "stats": {
+           "0": 53.0,
+           "1": 26.0,
+           "2": 19.0,
+           "3": 1539.0,
+           "4": 142.0,
+           "6": 1397.0,
+           "7": 2.0,
+           "8": 196566.0,
+           "9": 9.0,
+           "10": 2.60065322,
+           "11": 0.90773229,
+           "12": 0.48148148,
+           "30": 55.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3041994,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3041994,
+        "fullName": "Elias Lindholm",
+        "defaultPositionId": 1,
+        "proTeamId": 1,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 120.0,
+          "stats": {
+           "13": 17.0,
+           "14": 31.0,
+           "15": -7.0,
+           "16": 48.0,
+           "17": 38.0,
+           "18": 7.0,
+           "19": 13.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 661.0,
+           "24": 516.0,
+           "25": 1464.0,
+           "26": 74033.0,
+           "27": 1072.94202899,
+           "29": 114.0,
+           "30": 69.0,
+           "31": 41.0,
+           "32": 59.0,
+           "34": 69.0,
+           "35": 7.0,
+           "36": 13.0,
+           "37": 20.0,
+           "38": 20.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 132.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114743,
+      "lineupSlotId": 8,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114743,
+        "fullName": "Kevin Fiala",
+        "defaultPositionId": 2,
+        "proTeamId": 8,
+        "injuryStatus": "INJURY_RESERVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 97.1,
+          "stats": {
+           "13": 18.0,
+           "14": 22.0,
+           "15": -11.0,
+           "16": 40.0,
+           "17": 34.0,
+           "18": 4.0,
+           "19": 13.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 7.0,
+           "24": 18.0,
+           "25": 1120.0,
+           "26": 64248.0,
+           "27": 1147.28571429,
+           "29": 147.0,
+           "30": 56.0,
+           "31": 39.0,
+           "32": 24.0,
+           "34": 56.0,
+           "35": 4.0,
+           "36": 13.0,
+           "37": 17.0,
+           "38": 17.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 152.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4352770,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4352770,
+        "fullName": "K'Andre Miller",
+        "defaultPositionId": 4,
+        "proTeamId": 7,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 109.9,
+          "stats": {
+           "13": 8.0,
+           "14": 29.0,
+           "15": 7.0,
+           "16": 37.0,
+           "17": 56.0,
+           "18": 1.0,
+           "19": 2.0,
+           "20": 1.0,
+           "21": 2.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 1.0,
+           "25": 1936.0,
+           "26": 96737.0,
+           "27": 1343.56944444,
+           "29": 123.0,
+           "30": 72.0,
+           "31": 101.0,
+           "32": 79.0,
+           "33": 37.0,
+           "34": 72.0,
+           "35": 2.0,
+           "36": 4.0,
+           "37": 6.0,
+           "38": 3.0,
+           "39": 3.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 145.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5149204,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5149204,
+        "fullName": "Gabe Perreault",
+        "defaultPositionId": 3,
+        "proTeamId": 13,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 62.8,
+          "stats": {
+           "13": 12.0,
+           "14": 15.0,
+           "15": 0.0,
+           "16": 27.0,
+           "17": 10.0,
+           "18": 3.0,
+           "19": 3.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 5.0,
+           "24": 5.0,
+           "25": 990.0,
+           "26": 47000.0,
+           "27": 959.18367347,
+           "28": 1.0,
+           "29": 73.0,
+           "30": 49.0,
+           "31": 25.0,
+           "32": 22.0,
+           "34": 49.0,
+           "35": 3.0,
+           "36": 3.0,
+           "37": 6.0,
+           "38": 6.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": 2,
+   "abbrev": "T2",
+   "name": "Blue Liners",
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/00000002-aaaa-bbbb-cccc-000000000000",
+   "owners": [
+    "{00000004-0000-4000-8000-000000000004}"
+   ],
+   "playoffSeed": 2,
+   "rankCalculatedFinal": 0,
+   "record": {
+    "overall": {
+     "wins": 8,
+     "losses": 4,
+     "ties": 0,
+     "pointsFor": 820.5,
+     "pointsAgainst": 820.25,
+     "gamesBack": 1.0,
+     "streakType": "LOSS",
+     "streakLength": 2
+    }
+   },
+   "roster": {
+    "entries": [
+     {
+      "playerId": 4024123,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4024123,
+        "fullName": "Auston Matthews",
+        "defaultPositionId": 1,
+        "proTeamId": 21,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 153.4,
+          "stats": {
+           "13": 27.0,
+           "14": 26.0,
+           "15": -4.0,
+           "16": 53.0,
+           "17": 18.0,
+           "18": 5.0,
+           "19": 7.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 580.0,
+           "24": 392.0,
+           "25": 1441.0,
+           "26": 74894.0,
+           "27": 1248.23333333,
+           "28": 1.0,
+           "29": 227.0,
+           "30": 60.0,
+           "31": 42.0,
+           "32": 81.0,
+           "34": 60.0,
+           "35": 5.0,
+           "36": 7.0,
+           "37": 12.0,
+           "38": 12.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 250.6
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4565236,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4565236,
+        "fullName": "Cole Caufield",
+        "defaultPositionId": 2,
+        "proTeamId": 10,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 194.8,
+          "stats": {
+           "13": 51.0,
+           "14": 37.0,
+           "15": 29.0,
+           "16": 88.0,
+           "17": 14.0,
+           "18": 11.0,
+           "19": 18.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 12.0,
+           "23": 6.0,
+           "24": 12.0,
+           "25": 1671.0,
+           "26": 88372.0,
+           "27": 1091.01234568,
+           "28": 2.0,
+           "29": 258.0,
+           "30": 81.0,
+           "31": 50.0,
+           "32": 21.0,
+           "34": 81.0,
+           "35": 11.0,
+           "36": 18.0,
+           "37": 29.0,
+           "38": 29.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 179.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114766,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114766,
+        "fullName": "Alex Tuch",
+        "defaultPositionId": 3,
+        "proTeamId": 23,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 178.7,
+          "stats": {
+           "13": 33.0,
+           "14": 33.0,
+           "15": 24.0,
+           "16": 66.0,
+           "17": 57.0,
+           "18": 7.0,
+           "19": 2.0,
+           "20": 3.0,
+           "21": 2.0,
+           "22": 2.0,
+           "23": 46.0,
+           "24": 52.0,
+           "25": 1974.0,
+           "26": 90029.0,
+           "27": 1139.60759494,
+           "28": 1.0,
+           "29": 195.0,
+           "30": 79.0,
+           "31": 82.0,
+           "32": 90.0,
+           "34": 79.0,
+           "35": 10.0,
+           "36": 4.0,
+           "37": 14.0,
+           "38": 9.0,
+           "39": 5.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 171.5
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3042083,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3042083,
+        "fullName": "Jake Guentzel",
+        "defaultPositionId": 2,
+        "proTeamId": 20,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 188.4,
+          "stats": {
+           "13": 38.0,
+           "14": 50.0,
+           "15": 13.0,
+           "16": 88.0,
+           "17": 61.0,
+           "18": 8.0,
+           "19": 22.0,
+           "20": 2.0,
+           "21": 0.0,
+           "22": 5.0,
+           "23": 209.0,
+           "24": 228.0,
+           "25": 1766.0,
+           "26": 98395.0,
+           "27": 1214.75308642,
+           "28": 1.0,
+           "29": 220.0,
+           "30": 81.0,
+           "31": 39.0,
+           "32": 41.0,
+           "34": 81.0,
+           "35": 10.0,
+           "36": 22.0,
+           "37": 32.0,
+           "38": 30.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 184.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5436,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5436,
+        "fullName": "Roman Josi",
+        "defaultPositionId": 4,
+        "proTeamId": 27,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 151.0,
+          "stats": {
+           "13": 13.0,
+           "14": 42.0,
+           "15": -15.0,
+           "16": 55.0,
+           "17": 30.0,
+           "18": 4.0,
+           "19": 20.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1810.0,
+           "26": 101500.0,
+           "27": 1492.64705882,
+           "29": 181.0,
+           "30": 68.0,
+           "31": 24.0,
+           "32": 101.0,
+           "33": 55.0,
+           "34": 68.0,
+           "35": 4.0,
+           "36": 20.0,
+           "37": 24.0,
+           "38": 24.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 185.8
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5037,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5037,
+        "fullName": "Steven Stamkos",
+        "defaultPositionId": 1,
+        "proTeamId": 27,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 168.5,
+          "stats": {
+           "13": 42.0,
+           "14": 24.0,
+           "15": -17.0,
+           "16": 66.0,
+           "17": 58.0,
+           "18": 14.0,
+           "19": 12.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 10.0,
+           "23": 323.0,
+           "24": 237.0,
+           "25": 1706.0,
+           "26": 87711.0,
+           "27": 1069.64634146,
+           "28": 2.0,
+           "29": 206.0,
+           "30": 82.0,
+           "31": 89.0,
+           "32": 36.0,
+           "34": 82.0,
+           "35": 14.0,
+           "36": 12.0,
+           "37": 26.0,
+           "38": 26.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 184.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4233555,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4233555,
+        "fullName": "Nico Hischier",
+        "defaultPositionId": 1,
+        "proTeamId": 11,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 163.9,
+          "stats": {
+           "13": 28.0,
+           "14": 38.0,
+           "15": -6.0,
+           "16": 66.0,
+           "17": 29.0,
+           "18": 11.0,
+           "19": 12.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 6.0,
+           "23": 1008.0,
+           "24": 800.0,
+           "25": 1953.0,
+           "26": 101926.0,
+           "27": 1243.0,
+           "29": 211.0,
+           "30": 82.0,
+           "31": 58.0,
+           "32": 62.0,
+           "34": 82.0,
+           "35": 11.0,
+           "36": 13.0,
+           "37": 24.0,
+           "38": 23.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 169.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3904186,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3904186,
+        "fullName": "Rasmus Andersson",
+        "defaultPositionId": 4,
+        "proTeamId": 37,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 167.0,
+          "stats": {
+           "13": 17.0,
+           "14": 30.0,
+           "15": 4.0,
+           "16": 47.0,
+           "17": 71.0,
+           "18": 6.0,
+           "19": 7.0,
+           "20": 1.0,
+           "21": 0.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2638.0,
+           "26": 112760.0,
+           "27": 1392.09876543,
+           "29": 178.0,
+           "30": 81.0,
+           "31": 37.0,
+           "32": 149.0,
+           "33": 47.0,
+           "34": 81.0,
+           "35": 7.0,
+           "36": 7.0,
+           "37": 14.0,
+           "38": 13.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 165.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2976851,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2976851,
+        "fullName": "Mike Matheson",
+        "defaultPositionId": 4,
+        "proTeamId": 10,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 137.8,
+          "stats": {
+           "13": 7.0,
+           "14": 30.0,
+           "15": 9.0,
+           "16": 37.0,
+           "17": 34.0,
+           "18": 0.0,
+           "19": 1.0,
+           "20": 1.0,
+           "21": 1.0,
+           "22": 3.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2020.0,
+           "26": 113083.0,
+           "27": 1449.78205128,
+           "29": 114.0,
+           "30": 78.0,
+           "31": 59.0,
+           "32": 150.0,
+           "33": 37.0,
+           "34": 78.0,
+           "35": 1.0,
+           "36": 2.0,
+           "37": 3.0,
+           "38": 1.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 171.1
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2590852,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2590852,
+        "fullName": "J.T. Miller",
+        "defaultPositionId": 1,
+        "proTeamId": 13,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 123.7,
+          "stats": {
+           "13": 17.0,
+           "14": 36.0,
+           "15": -30.0,
+           "16": 53.0,
+           "17": 33.0,
+           "18": 6.0,
+           "19": 13.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 5.0,
+           "23": 547.0,
+           "24": 343.0,
+           "25": 1731.0,
+           "26": 82194.0,
+           "27": 1208.73529412,
+           "29": 144.0,
+           "30": 68.0,
+           "31": 123.0,
+           "32": 34.0,
+           "34": 68.0,
+           "35": 6.0,
+           "36": 14.0,
+           "37": 20.0,
+           "38": 19.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 196.9
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4064582,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4064582,
+        "fullName": "Carter Hart",
+        "defaultPositionId": 5,
+        "proTeamId": 37,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 30.2,
+          "stats": {
+           "0": 18.0,
+           "1": 11.0,
+           "2": 3.0,
+           "3": 422.0,
+           "4": 46.0,
+           "6": 376.0,
+           "7": 0.0,
+           "8": 61187.0,
+           "9": 3.0,
+           "10": 2.70645725,
+           "11": 0.89099526,
+           "12": 0.64705882,
+           "30": 18.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3735,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3735,
+        "fullName": "Patrick Kane",
+        "defaultPositionId": 3,
+        "proTeamId": 4,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 113.5,
+          "stats": {
+           "13": 16.0,
+           "14": 41.0,
+           "15": -1.0,
+           "16": 57.0,
+           "17": 16.0,
+           "18": 2.0,
+           "19": 17.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 4.0,
+           "23": 5.0,
+           "24": 10.0,
+           "25": 1396.0,
+           "26": 71135.0,
+           "27": 1061.71641791,
+           "29": 169.0,
+           "30": 67.0,
+           "31": 21.0,
+           "32": 24.0,
+           "34": 67.0,
+           "35": 2.0,
+           "36": 17.0,
+           "37": 19.0,
+           "38": 19.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 114.2
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2976839,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2976839,
+        "fullName": "Jacob Trouba",
+        "defaultPositionId": 4,
+        "proTeamId": 18,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 151.9,
+          "stats": {
+           "13": 10.0,
+           "14": 25.0,
+           "15": -1.0,
+           "16": 35.0,
+           "17": 31.0,
+           "18": 0.0,
+           "19": 1.0,
+           "20": 0.0,
+           "21": 1.0,
+           "22": 1.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 2278.0,
+           "26": 110940.0,
+           "27": 1369.62962963,
+           "29": 166.0,
+           "30": 81.0,
+           "31": 143.0,
+           "32": 150.0,
+           "33": 35.0,
+           "34": 81.0,
+           "35": 0.0,
+           "36": 2.0,
+           "37": 2.0,
+           "38": 1.0,
+           "39": 1.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 152.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3900169,
+      "lineupSlotId": 3,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3900169,
+        "fullName": "Travis Konecny",
+        "defaultPositionId": 3,
+        "proTeamId": 15,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 149.6,
+          "stats": {
+           "13": 27.0,
+           "14": 41.0,
+           "15": 14.0,
+           "16": 68.0,
+           "17": 59.0,
+           "18": 2.0,
+           "19": 12.0,
+           "20": 1.0,
+           "21": 1.0,
+           "22": 2.0,
+           "23": 20.0,
+           "24": 33.0,
+           "25": 1804.0,
+           "26": 88196.0,
+           "27": 1145.4025974,
+           "28": 1.0,
+           "29": 168.0,
+           "30": 77.0,
+           "31": 108.0,
+           "32": 38.0,
+           "34": 77.0,
+           "35": 3.0,
+           "36": 13.0,
+           "37": 16.0,
+           "38": 14.0,
+           "39": 2.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 155.8
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114732,
+      "lineupSlotId": 6,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114732,
+        "fullName": "Sam Bennett",
+        "defaultPositionId": 1,
+        "proTeamId": 26,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         0,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 138.6,
+          "stats": {
+           "13": 26.0,
+           "14": 32.0,
+           "15": -10.0,
+           "16": 58.0,
+           "17": 82.0,
+           "18": 5.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 5.0,
+           "23": 517.0,
+           "24": 570.0,
+           "25": 1691.0,
+           "26": 84326.0,
+           "27": 1109.55263158,
+           "29": 201.0,
+           "30": 76.0,
+           "31": 115.0,
+           "32": 32.0,
+           "34": 76.0,
+           "35": 5.0,
+           "36": 9.0,
+           "37": 14.0,
+           "38": 14.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 133.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4233889,
+      "lineupSlotId": 5,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4233889,
+        "fullName": "Ukko-Pekka Luukkonen",
+        "defaultPositionId": 5,
+        "proTeamId": 2,
+        "injuryStatus": "DAY_TO_DAY",
+        "eligibleSlots": [
+         5,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 93.2,
+          "stats": {
+           "0": 34.0,
+           "1": 22.0,
+           "2": 9.0,
+           "3": 930.0,
+           "4": 85.0,
+           "6": 846.0,
+           "7": 1.0,
+           "8": 121666.0,
+           "9": 3.0,
+           "10": 2.51508227,
+           "11": 0.90967742,
+           "12": 0.64705882,
+           "30": 35.0,
+           "35": 0.0,
+           "36": 0.0,
+           "37": 0.0,
+           "38": 0.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 62.8
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5161,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5161,
+        "fullName": "Matt Duchene",
+        "defaultPositionId": 1,
+        "proTeamId": 9,
+        "injuryStatus": "DAY_TO_DAY",
+        "eligibleSlots": [
+         3,
+         0,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 91.3,
+          "stats": {
+           "13": 16.0,
+           "14": 29.0,
+           "15": -3.0,
+           "16": 45.0,
+           "17": 8.0,
+           "18": 5.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 4.0,
+           "23": 266.0,
+           "24": 244.0,
+           "25": 1085.0,
+           "26": 56463.0,
+           "27": 990.57894737,
+           "29": 89.0,
+           "30": 57.0,
+           "31": 29.0,
+           "32": 23.0,
+           "34": 57.0,
+           "35": 5.0,
+           "36": 9.0,
+           "37": 14.0,
+           "38": 14.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 141.7
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3114777,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3114777,
+        "fullName": "Jared McCann",
+        "defaultPositionId": 2,
+        "proTeamId": 124292,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 94.7,
+          "stats": {
+           "13": 20.0,
+           "14": 20.0,
+           "15": -7.0,
+           "16": 40.0,
+           "17": 11.0,
+           "18": 7.0,
+           "19": 6.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 13.0,
+           "24": 12.0,
+           "25": 1114.0,
+           "26": 51274.0,
+           "27": 986.03846154,
+           "29": 117.0,
+           "30": 52.0,
+           "31": 40.0,
+           "32": 25.0,
+           "34": 52.0,
+           "35": 7.0,
+           "36": 6.0,
+           "37": 13.0,
+           "38": 13.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 138.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 2967072,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 2967072,
+        "fullName": "Jonathan Marchessault",
+        "defaultPositionId": 3,
+        "proTeamId": 27,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 72.2,
+          "stats": {
+           "13": 12.0,
+           "14": 19.0,
+           "15": -18.0,
+           "16": 31.0,
+           "17": 30.0,
+           "18": 4.0,
+           "19": 4.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 1.0,
+           "23": 18.0,
+           "24": 25.0,
+           "25": 1209.0,
+           "26": 62151.0,
+           "27": 1002.43548387,
+           "29": 132.0,
+           "30": 62.0,
+           "31": 75.0,
+           "32": 9.0,
+           "34": 62.0,
+           "35": 4.0,
+           "36": 4.0,
+           "37": 8.0,
+           "38": 8.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 139.2
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 3539,
+      "lineupSlotId": 4,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 3539,
+        "fullName": "Kris Letang",
+        "defaultPositionId": 4,
+        "proTeamId": 16,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         4,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 108.9,
+          "stats": {
+           "13": 3.0,
+           "14": 31.0,
+           "15": -4.0,
+           "16": 34.0,
+           "17": 38.0,
+           "18": 1.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 0.0,
+           "24": 0.0,
+           "25": 1667.0,
+           "26": 96270.0,
+           "27": 1300.94594595,
+           "29": 104.0,
+           "30": 74.0,
+           "31": 95.0,
+           "32": 94.0,
+           "33": 34.0,
+           "34": 74.0,
+           "35": 1.0,
+           "36": 9.0,
+           "37": 10.0,
+           "38": 10.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 157.0
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 5550,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 5550,
+        "fullName": "Tyler Toffoli",
+        "defaultPositionId": 3,
+        "proTeamId": 18,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 113.0,
+          "stats": {
+           "13": 19.0,
+           "14": 30.0,
+           "15": -12.0,
+           "16": 49.0,
+           "17": 10.0,
+           "18": 6.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 2.0,
+           "23": 6.0,
+           "24": 16.0,
+           "25": 1453.0,
+           "26": 70999.0,
+           "27": 898.72151899,
+           "29": 172.0,
+           "30": 79.0,
+           "31": 48.0,
+           "32": 31.0,
+           "34": 79.0,
+           "35": 6.0,
+           "36": 9.0,
+           "37": 15.0,
+           "38": 15.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 134.5
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4874730,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4874730,
+        "fullName": "Matt Coronato",
+        "defaultPositionId": 3,
+        "proTeamId": 3,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 103.5,
+          "stats": {
+           "13": 18.0,
+           "14": 27.0,
+           "15": -29.0,
+           "16": 45.0,
+           "17": 32.0,
+           "18": 7.0,
+           "19": 8.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 3.0,
+           "23": 70.0,
+           "24": 106.0,
+           "25": 1638.0,
+           "26": 79888.0,
+           "27": 998.6,
+           "29": 197.0,
+           "30": 80.0,
+           "31": 23.0,
+           "32": 22.0,
+           "34": 80.0,
+           "35": 7.0,
+           "36": 8.0,
+           "37": 15.0,
+           "38": 15.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 168.4
+         }
+        ]
+       }
+      }
+     },
+     {
+      "playerId": 4233720,
+      "lineupSlotId": 7,
+      "injuryStatus": "NORMAL",
+      "playerPoolEntry": {
+       "player": {
+        "id": 4233720,
+        "fullName": "Eeli Tolvanen",
+        "defaultPositionId": 2,
+        "proTeamId": 13,
+        "injuryStatus": "ACTIVE",
+        "eligibleSlots": [
+         3,
+         1,
+         2,
+         6,
+         7,
+         8
+        ],
+        "stats": [
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 0,
+          "statSplitTypeId": 0,
+          "appliedTotal": 128.3,
+          "stats": {
+           "13": 12.0,
+           "14": 24.0,
+           "15": -18.0,
+           "16": 36.0,
+           "17": 30.0,
+           "18": 5.0,
+           "19": 9.0,
+           "20": 0.0,
+           "21": 0.0,
+           "22": 0.0,
+           "23": 0.0,
+           "24": 3.0,
+           "25": 1675.0,
+           "26": 75077.0,
+           "27": 962.52564103,
+           "29": 141.0,
+           "30": 78.0,
+           "31": 187.0,
+           "32": 81.0,
+           "34": 78.0,
+           "35": 5.0,
+           "36": 9.0,
+           "37": 14.0,
+           "38": 14.0,
+           "39": 0.0
+          }
+         },
+         {
+          "seasonId": 2026,
+          "scoringPeriodId": 0,
+          "statSourceId": 1,
+          "statSplitTypeId": 0,
+          "appliedTotal": 142.6
+         }
+        ]
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "schedule": [
+  {
+   "matchupPeriodId": 1,
+   "home": {
+    "teamId": 1,
+    "totalPoints": 88.4,
+    "totalPointsLive": 88.4,
+    "cumulativeScore": {
+     "wins": 0,
+     "losses": 0,
+     "ties": 0,
+     "scoreByStat": {
+      "32": {
+       "score": 0.0,
+       "result": null
+      },
+      "1": {
+       "score": 0.0,
+       "result": null
+      },
+      "2": {
+       "score": 0.0,
+       "result": null
+      },
+      "3": {
+       "score": 0.0,
+       "result": null
+      },
+      "4": {
+       "score": 0.0,
+       "result": null
+      },
+      "6": {
+       "score": 0.0,
+       "result": null
+      },
+      "38": {
+       "score": 0.0,
+       "result": null
+      },
+      "7": {
+       "score": 0.0,
+       "result": null
+      },
+      "39": {
+       "score": 0.0,
+       "result": null
+      },
+      "9": {
+       "score": 0.0,
+       "result": null
+      },
+      "13": {
+       "score": 0.0,
+       "result": null
+      },
+      "14": {
+       "score": 0.0,
+       "result": null
+      },
+      "15": {
+       "score": 0.0,
+       "result": null
+      },
+      "16": {
+       "score": 0.0,
+       "result": null
+      },
+      "18": {
+       "score": 0.0,
+       "result": null
+      },
+      "19": {
+       "score": 0.0,
+       "result": null
+      },
+      "20": {
+       "score": 0.0,
+       "result": null
+      },
+      "21": {
+       "score": 0.0,
+       "result": null
+      },
+      "23": {
+       "score": 0.0,
+       "result": null
+      },
+      "29": {
+       "score": 0.0,
+       "result": null
+      },
+      "31": {
+       "score": 0.0,
+       "result": null
+      }
+     }
+    },
+    "rosterForCurrentScoringPeriod": {
+     "entries": [
+      {
+       "playerId": 3114727,
+       "playerPoolEntry": {
+        "appliedStatTotal": 4.5
+       }
+      },
+      {
+       "playerId": 3942335,
+       "playerPoolEntry": {
+        "appliedStatTotal": 2.0
+       }
+      },
+      {
+       "playerId": 4697386,
+       "playerPoolEntry": {
+        "appliedStatTotal": 0.0
+       }
+      },
+      {
+       "playerId": 3648002,
+       "playerPoolEntry": {
+        "appliedStatTotal": 6.1
+       }
+      }
+     ]
+    },
+    "rosterForMatchupPeriod": {
+     "entries": [
+      {
+       "playerId": 3114727,
+       "playerPoolEntry": {
+        "appliedStatTotal": 30.5
+       }
+      },
+      {
+       "playerId": 3942335,
+       "playerPoolEntry": {
+        "appliedStatTotal": 21.0
+       }
+      },
+      {
+       "playerId": 4697386,
+       "playerPoolEntry": {
+        "appliedStatTotal": 12.25
+       }
+      },
+      {
+       "playerId": 3648002,
+       "playerPoolEntry": {
+        "appliedStatTotal": 18.4
+       }
+      },
+      {
+       "playerId": 4197146,
+       "playerPoolEntry": {
+        "appliedStatTotal": 9.0
+       }
+      }
+     ]
+    }
+   },
+   "away": {
+    "teamId": 2,
+    "totalPoints": 71.2,
+    "totalPointsLive": 71.2,
+    "cumulativeScore": {
+     "wins": 0,
+     "losses": 0,
+     "ties": 0,
+     "scoreByStat": {
+      "32": {
+       "score": 0.0,
+       "result": null
+      },
+      "1": {
+       "score": 0.0,
+       "result": null
+      },
+      "2": {
+       "score": 0.0,
+       "result": null
+      },
+      "3": {
+       "score": 0.0,
+       "result": null
+      },
+      "4": {
+       "score": 0.0,
+       "result": null
+      },
+      "6": {
+       "score": 0.0,
+       "result": null
+      },
+      "38": {
+       "score": 0.0,
+       "result": null
+      },
+      "7": {
+       "score": 0.0,
+       "result": null
+      },
+      "39": {
+       "score": 0.0,
+       "result": null
+      },
+      "9": {
+       "score": 0.0,
+       "result": null
+      },
+      "13": {
+       "score": 0.0,
+       "result": null
+      },
+      "14": {
+       "score": 0.0,
+       "result": null
+      },
+      "15": {
+       "score": 0.0,
+       "result": null
+      },
+      "16": {
+       "score": 0.0,
+       "result": null
+      },
+      "18": {
+       "score": 0.0,
+       "result": null
+      },
+      "19": {
+       "score": 0.0,
+       "result": null
+      },
+      "20": {
+       "score": 0.0,
+       "result": null
+      },
+      "21": {
+       "score": 0.0,
+       "result": null
+      },
+      "23": {
+       "score": 0.0,
+       "result": null
+      },
+      "29": {
+       "score": 0.0,
+       "result": null
+      },
+      "31": {
+       "score": 0.0,
+       "result": null
+      }
+     }
+    },
+    "rosterForCurrentScoringPeriod": {
+     "entries": [
+      {
+       "playerId": 4024123,
+       "playerPoolEntry": {
+        "appliedStatTotal": 4.5
+       }
+      },
+      {
+       "playerId": 4565236,
+       "playerPoolEntry": {
+        "appliedStatTotal": 2.0
+       }
+      },
+      {
+       "playerId": 3114766,
+       "playerPoolEntry": {
+        "appliedStatTotal": 0.0
+       }
+      },
+      {
+       "playerId": 3042083,
+       "playerPoolEntry": {
+        "appliedStatTotal": 6.1
+       }
+      }
+     ]
+    },
+    "rosterForMatchupPeriod": {
+     "entries": [
+      {
+       "playerId": 4024123,
+       "playerPoolEntry": {
+        "appliedStatTotal": 30.5
+       }
+      },
+      {
+       "playerId": 4565236,
+       "playerPoolEntry": {
+        "appliedStatTotal": 21.0
+       }
+      },
+      {
+       "playerId": 3114766,
+       "playerPoolEntry": {
+        "appliedStatTotal": 12.25
+       }
+      },
+      {
+       "playerId": 3042083,
+       "playerPoolEntry": {
+        "appliedStatTotal": 18.4
+       }
+      },
+      {
+       "playerId": 5436,
+       "playerPoolEntry": {
+        "appliedStatTotal": 9.0
+       }
+      }
+     ]
+    }
+   },
+   "winner": "UNDECIDED"
+  },
+  {
+   "matchupPeriodId": 1,
+   "home": {
+    "teamId": 3,
+    "totalPoints": 65.0,
+    "totalPointsLive": 65.0,
+    "cumulativeScore": {
+     "wins": 0,
+     "losses": 0,
+     "ties": 0,
+     "scoreByStat": {
+      "32": {
+       "score": 0.0,
+       "result": null
+      },
+      "1": {
+       "score": 0.0,
+       "result": null
+      },
+      "2": {
+       "score": 0.0,
+       "result": null
+      },
+      "3": {
+       "score": 0.0,
+       "result": null
+      },
+      "4": {
+       "score": 0.0,
+       "result": null
+      },
+      "6": {
+       "score": 0.0,
+       "result": null
+      },
+      "38": {
+       "score": 0.0,
+       "result": null
+      },
+      "7": {
+       "score": 0.0,
+       "result": null
+      },
+      "39": {
+       "score": 0.0,
+       "result": null
+      },
+      "9": {
+       "score": 0.0,
+       "result": null
+      },
+      "13": {
+       "score": 0.0,
+       "result": null
+      },
+      "14": {
+       "score": 0.0,
+       "result": null
+      },
+      "15": {
+       "score": 0.0,
+       "result": null
+      },
+      "16": {
+       "score": 0.0,
+       "result": null
+      },
+      "18": {
+       "score": 0.0,
+       "result": null
+      },
+      "19": {
+       "score": 0.0,
+       "result": null
+      },
+      "20": {
+       "score": 0.0,
+       "result": null
+      },
+      "21": {
+       "score": 0.0,
+       "result": null
+      },
+      "23": {
+       "score": 0.0,
+       "result": null
+      },
+      "29": {
+       "score": 0.0,
+       "result": null
+      },
+      "31": {
+       "score": 0.0,
+       "result": null
+      }
+     }
+    },
+    "rosterForCurrentScoringPeriod": {
+     "entries": [
+      {
+       "playerId": 4565233,
+       "playerPoolEntry": {
+        "appliedStatTotal": 4.5
+       }
+      },
+      {
+       "playerId": 5080230,
+       "playerPoolEntry": {
+        "appliedStatTotal": 2.0
+       }
+      },
+      {
+       "playerId": 4874740,
+       "playerPoolEntry": {
+        "appliedStatTotal": 0.0
+       }
+      },
+      {
+       "playerId": 4024854,
+       "playerPoolEntry": {
+        "appliedStatTotal": 6.1
+       }
+      }
+     ]
+    },
+    "rosterForMatchupPeriod": {
+     "entries": [
+      {
+       "playerId": 4565233,
+       "playerPoolEntry": {
+        "appliedStatTotal": 30.5
+       }
+      },
+      {
+       "playerId": 5080230,
+       "playerPoolEntry": {
+        "appliedStatTotal": 21.0
+       }
+      },
+      {
+       "playerId": 4874740,
+       "playerPoolEntry": {
+        "appliedStatTotal": 12.25
+       }
+      },
+      {
+       "playerId": 4024854,
+       "playerPoolEntry": {
+        "appliedStatTotal": 18.4
+       }
+      },
+      {
+       "playerId": 3042269,
+       "playerPoolEntry": {
+        "appliedStatTotal": 9.0
+       }
+      }
+     ]
+    }
+   },
+   "away": {
+    "teamId": 4,
+    "totalPoints": 65.0,
+    "totalPointsLive": 65.0,
+    "cumulativeScore": {
+     "wins": 0,
+     "losses": 0,
+     "ties": 0,
+     "scoreByStat": {
+      "32": {
+       "score": 0.0,
+       "result": null
+      },
+      "1": {
+       "score": 0.0,
+       "result": null
+      },
+      "2": {
+       "score": 0.0,
+       "result": null
+      },
+      "3": {
+       "score": 0.0,
+       "result": null
+      },
+      "4": {
+       "score": 0.0,
+       "result": null
+      },
+      "6": {
+       "score": 0.0,
+       "result": null
+      },
+      "38": {
+       "score": 0.0,
+       "result": null
+      },
+      "7": {
+       "score": 0.0,
+       "result": null
+      },
+      "39": {
+       "score": 0.0,
+       "result": null
+      },
+      "9": {
+       "score": 0.0,
+       "result": null
+      },
+      "13": {
+       "score": 0.0,
+       "result": null
+      },
+      "14": {
+       "score": 0.0,
+       "result": null
+      },
+      "15": {
+       "score": 0.0,
+       "result": null
+      },
+      "16": {
+       "score": 0.0,
+       "result": null
+      },
+      "18": {
+       "score": 0.0,
+       "result": null
+      },
+      "19": {
+       "score": 0.0,
+       "result": null
+      },
+      "20": {
+       "score": 0.0,
+       "result": null
+      },
+      "21": {
+       "score": 0.0,
+       "result": null
+      },
+      "23": {
+       "score": 0.0,
+       "result": null
+      },
+      "29": {
+       "score": 0.0,
+       "result": null
+      },
+      "31": {
+       "score": 0.0,
+       "result": null
+      }
+     }
+    },
+    "rosterForCurrentScoringPeriod": {
+     "entries": [
+      {
+       "playerId": 5206628,
+       "playerPoolEntry": {
+        "appliedStatTotal": 4.5
+       }
+      },
+      {
+       "playerId": 4233594,
+       "playerPoolEntry": {
+        "appliedStatTotal": 2.0
+       }
+      },
+      {
+       "playerId": 4565227,
+       "playerPoolEntry": {
+        "appliedStatTotal": 0.0
+       }
+      },
+      {
+       "playerId": 3114736,
+       "playerPoolEntry": {
+        "appliedStatTotal": 6.1
+       }
+      }
+     ]
+    },
+    "rosterForMatchupPeriod": {
+     "entries": [
+      {
+       "playerId": 5206628,
+       "playerPoolEntry": {
+        "appliedStatTotal": 30.5
+       }
+      },
+      {
+       "playerId": 4233594,
+       "playerPoolEntry": {
+        "appliedStatTotal": 21.0
+       }
+      },
+      {
+       "playerId": 4565227,
+       "playerPoolEntry": {
+        "appliedStatTotal": 12.25
+       }
+      },
+      {
+       "playerId": 3114736,
+       "playerPoolEntry": {
+        "appliedStatTotal": 18.4
+       }
+      },
+      {
+       "playerId": 4915349,
+       "playerPoolEntry": {
+        "appliedStatTotal": 9.0
+       }
+      }
+     ]
+    }
+   },
+   "winner": "UNDECIDED"
+  }
+ ]
+}

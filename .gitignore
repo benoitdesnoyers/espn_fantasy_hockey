@@ -1,5 +1,15 @@
+# Local Home Assistant instance used for development
 .ha_config/
-.DS_Store
+
+# Python
 __pycache__/
-custom_components/espn_fantasy_hockey/__pycache__/
 *.pyc
+.coverage
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Editors and OS
+.nova/
+.DS_Store

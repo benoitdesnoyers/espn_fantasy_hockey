@@ -1,0 +1,40 @@
+# Tooling configuration only; the integration itself is described by manifest.json.
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+  "B",    # bugbear
+  "C4",   # comprehensions
+  "E",    # pycodestyle errors
+  "F",    # pyflakes
+  "I",    # import sorting
+  "PL",   # pylint
+  "PTH",  # prefer pathlib
+  "RET",  # return statements
+  "RUF",  # ruff-specific
+  "SIM",  # simplifications
+  "UP",   # pyupgrade
+  "W",    # pycodestyle warnings
+]
+
+[tool.ruff.lint.isort]
+# Match Home Assistant's import style.
+force-sort-within-sections = true
+combine-as-imports = true
+known-first-party = ["custom_components.espn_fantasy_hockey"]
+known-third-party = ["homeassistant"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+  "PLR2004",  # literal expected values are the point of a test
+  "PLR0913",  # test data builders take many optional keywords
+  "PLR0917",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
