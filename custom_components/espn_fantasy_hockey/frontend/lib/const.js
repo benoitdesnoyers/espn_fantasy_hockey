@@ -1,7 +1,7 @@
 export const DOMAIN = "espn_fantasy_hockey";
 
 // Keep in sync with manifest.json; tests/test_manifest.py checks it.
-export const VERSION = "0.2.2";
+export const VERSION = "1.0.1";
 
 /** Points windows, as the suffixes of the roster's `points_*` fields, in display order. */
 export const WINDOWS = ["today", "matchup", "season", "last_7", "last_15", "last_30", "projected"];

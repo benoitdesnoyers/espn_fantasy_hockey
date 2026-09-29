@@ -6,6 +6,15 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-09-28
+
+### Fixed
+
+- Home Assistant and the dashboard cards reported version 0.2.2 for the 1.0.0
+  release; they now report the release's version.
+
+## [1.0.0] - 2026-09-28
+
 ### Changed
 
 - **Breaking:** the roster stat `toi_per_game` (a `"m:ss"` string) is now
@@ -76,7 +85,9 @@ Broken release (invalid `manifest.json`); use 0.2.2.
 - Proxy for custom team logos that ESPN only serves to logged-in users.
 - Automatic detection of the user's own team from the `SWID` cookie.
 
-[Unreleased]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v0.2.2...v1.0.0
 [0.2.2]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/releases/tag/v0.2.0

@@ -9,5 +9,5 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/benoitdesnoyers/espn_fantasy_hockey/issues",
   "requirements": [],
-  "version": "0.2.2"
+  "version": "1.0.1"
 }
