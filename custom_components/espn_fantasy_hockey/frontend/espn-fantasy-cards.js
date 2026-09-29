@@ -15,7 +15,7 @@
  */
 
 const DOMAIN = "espn_fantasy_hockey";
-const VERSION = "0.2.1";
+const VERSION = "0.2.2";
 
 const WINDOWS = {
   season: "Season",
