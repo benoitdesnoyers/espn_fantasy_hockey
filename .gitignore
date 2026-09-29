@@ -1,4 +1,5 @@
 .ha_config/
 .DS_Store
-__pycache__/ __pycache__/
+__pycache__/
+custom_components/espn_fantasy_hockey/__pycache__/
 *.pyc
