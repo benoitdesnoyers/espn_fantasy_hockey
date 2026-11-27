@@ -2,6 +2,7 @@
 .ha_config/
 
 # Python
+.venv/
 __pycache__/
 *.pyc
 .coverage

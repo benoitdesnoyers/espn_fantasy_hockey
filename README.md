@@ -153,7 +153,7 @@ Replace `my_league` with your league's entity ID prefix, and the `notify` action
 
 ### Team logos
 
-Logos that team managers uploaded themselves are only served by ESPN to logged-in users, which a browser won't do from a Home Assistant page. For private leagues (cookies configured) the integration downloads these with your cookies and serves them from Home Assistant at `/api/espn_fantasy_hockey/logo/<entry_id>/<team_id>`; ESPN's built-in logos are linked directly. That address works without logging in to Home Assistant (images can't send your login), but it only ever serves team logos, and your cookies never leave Home Assistant.
+ESPN's built-in logos are linked directly. Team-manager uploads are private to ESPN accounts, so the integration does not download or proxy them; dashboard cards show the team's abbreviation instead.
 
 ## Troubleshooting
 

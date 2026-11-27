@@ -240,11 +240,6 @@ class EspnFantasyHockeyApi:
         if espn_s2 and swid:
             self._cookies = {"espn_s2": espn_s2, "SWID": swid}
 
-    @property
-    def has_cookies(self) -> bool:
-        """Whether this client is logged in to ESPN."""
-        return bool(self._cookies)
-
     async def async_get_league(self) -> League:
         """Fetch and parse the league."""
         data = await self._async_get_json(self._league_url(), self._views(*API_VIEWS))
@@ -294,22 +289,6 @@ class EspnFantasyHockeyApi:
         except EspnLeagueNotFound:
             return False
         return True
-
-    async def async_get_image(self, url: str) -> tuple[bytes, str]:
-        """Download an image that ESPN only serves to logged-in users."""
-        try:
-            async with self._session.get(
-                url,
-                # ESPN answers 406 to "Accept: image/*"; the type is checked below.
-                headers=self._headers("*/*"),
-                timeout=REQUEST_TIMEOUT,
-            ) as resp:
-                resp.raise_for_status()
-                if not resp.content_type.startswith("image/"):
-                    raise EspnApiError(f"Not an image: {resp.content_type}")
-                return await resp.read(), resp.content_type
-        except aiohttp.ClientError as err:
-            raise EspnApiError(f"Error downloading {url}: {err}") from err
 
     def _league_url(self) -> str:
         return API_BASE_URL.format(season=self._season, league_id=self._league_id)

@@ -33,7 +33,6 @@ from .const import (
     DEFAULT_NORMAL_INTERVAL,
     DOMAIN,
     EVENT_TRANSACTION,
-    LOGO_PROXY_URL,
     MY_TEAM_AUTO,
     PRIVATE_LOGO_HOST,
     RECENT_TRANSACTIONS,
@@ -105,9 +104,6 @@ class EspnFantasyHockeyCoordinator(DataUpdateCoordinator[LeagueData]):
         self._transactions_fetched: datetime | None = None
         self._player_names: dict[int, str] = {}
         self._season_checked: datetime | None = None
-        # Proxied logos by team: (ESPN URL, bytes, content type). A new upload gets a
-        # new URL, so keying on the team keeps one image per team at most.
-        self._logos: dict[int, tuple[str, bytes, str]] = {}
 
     async def _async_update_data(self) -> LeagueData:
         try:
@@ -233,25 +229,11 @@ class EspnFantasyHockeyCoordinator(DataUpdateCoordinator[LeagueData]):
         )
 
     def logo_url(self, team: Team) -> str | None:
-        """Return a URL browsers can load: direct, or via HA for private uploads."""
+        """Return a public logo URL; private uploads fall back to the team initials."""
         if not team.logo:
             return None
         logo = urlparse(team.logo)
-        if logo.hostname != PRIVATE_LOGO_HOST or not self.api.has_cookies:
-            return team.logo
-        path = LOGO_PROXY_URL.format(
-            entry_id=self.config_entry.entry_id, team_id=team.id
-        )
-        # The query string changes with the logo, so browsers fetch the new one.
-        return f"{path}?v={logo.path.rsplit('/', 1)[-1][:8]}"
-
-    async def async_get_logo(self, team: Team) -> tuple[bytes, str]:
-        """Return a team's logo bytes and content type, downloading on change."""
-        cached = self._logos.get(team.id)
-        if cached is None or cached[0] != team.logo:
-            body, content_type = await self.api.async_get_image(team.logo)
-            cached = self._logos[team.id] = (team.logo, body, content_type)
-        return cached[1], cached[2]
+        return None if logo.hostname == PRIVATE_LOGO_HOST else team.logo
 
 
 def describe_transaction(

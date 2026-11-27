@@ -64,10 +64,9 @@ HEADSHOT_URL: Final = (
     "&w=208&h=152"
 )
 
-# Custom-uploaded team logos live here and require the espn_s2/SWID cookies, which
-# browsers won't send from a Home Assistant page, so they're proxied through HA.
+# Custom-uploaded team logos live here and require ESPN cookies; don't expose them
+# through Home Assistant image URLs.
 PRIVATE_LOGO_HOST: Final = "mystique-api.fantasy.espn.com"
-LOGO_PROXY_URL: Final = "/api/espn_fantasy_hockey/logo/{entry_id}/{team_id}"
 
 # Dashboard cards shipped with the integration, served from frontend/ under
 # CARDS_URL/<build id>/ and loaded through CARDS_ENTRYPOINT.

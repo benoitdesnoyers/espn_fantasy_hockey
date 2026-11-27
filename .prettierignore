@@ -1,5 +1,6 @@
 # Prettier formats the JavaScript, Markdown, YAML and hand-written JSON.
 .ha_config/
+.venv/
 node_modules/
 package-lock.json
 tests/fixtures/

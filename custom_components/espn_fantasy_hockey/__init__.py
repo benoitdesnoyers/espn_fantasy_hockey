@@ -23,7 +23,6 @@ from .const import (
     DOMAIN,
 )
 from .coordinator import EspnFantasyHockeyConfigEntry, EspnFantasyHockeyCoordinator
-from .logo_view import EspnLogoView
 
 PLATFORMS: list[Platform] = [Platform.EVENT, Platform.SENSOR]
 FRONTEND_DIR = Path(__file__).parent / "frontend"
@@ -32,9 +31,7 @@ CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Register what every league shares: the logo proxy and the dashboard cards."""
-    hass.http.register_view(EspnLogoView())
-
+    """Register the dashboard cards."""
     # Serve the cards and load them on every dashboard, so users don't have to add a
     # Lovelace resource. The modules import each other by relative path, so the
     # build id goes in the path (not a query string) to bust caches for all of them.

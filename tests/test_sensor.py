@@ -190,14 +190,15 @@ async def test_latest_transaction(
     ]
 
 
-async def test_private_logo_is_proxied(
+async def test_private_logo_is_not_exposed(
     hass: HomeAssistant, config_entry: MockConfigEntry, mock_espn: AiohttpClientMocker
 ) -> None:
     await setup_integration(hass, config_entry)
     private = hass.states.get(f"{PREFIX}_blue_liners_standing")
     public = hass.states.get(f"{PREFIX}_ice_wolves_standing")
 
-    assert private.attributes["entity_picture"].startswith(
-        f"/api/espn_fantasy_hockey/logo/{config_entry.entry_id}/{MY_TEAM_ID}?v="
-    )
+    assert private.attributes.get("entity_picture") is None
     assert public.attributes["entity_picture"].startswith("https://g.espncdn.com/")
+    assert not any(
+        "mystique-api.fantasy.espn.com" in str(call[1]) for call in mock_espn.mock_calls
+    )

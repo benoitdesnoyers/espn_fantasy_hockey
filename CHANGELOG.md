@@ -6,6 +6,20 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-11-26
+
+### Security
+
+- Removed the unauthenticated logo proxy at `/api/espn_fantasy_hockey/logo/...`,
+  which let anyone who knew the address read private league team logos.
+- The integration no longer downloads images with your ESPN cookies, so a logo URL
+  set by a league member can never receive them.
+
+### Changed
+
+- Team logos uploaded by managers are no longer shown; cards show the team
+  abbreviation for them instead. ESPN's built-in logos are unchanged.
+
 ## [1.0.1] - 2026-09-28
 
 ### Fixed
@@ -85,7 +99,8 @@ Broken release (invalid `manifest.json`); use 0.2.2.
 - Proxy for custom team logos that ESPN only serves to logged-in users.
 - Automatic detection of the user's own team from the `SWID` cookie.
 
-[Unreleased]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v0.2.2...v1.0.0
 [0.2.2]: https://github.com/benoitdesnoyers/espn_fantasy_hockey/compare/v0.2.1...v0.2.2
